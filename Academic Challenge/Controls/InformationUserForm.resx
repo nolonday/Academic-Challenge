@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Question_Text.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 40pt, style=Bold</value>
+  </data>
+  <data name="Question_Text.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 3</value>
+  </data>
+  <data name="Question_Text.Size" type="System.Drawing.Size, System.Drawing">
+    <value>843, 62</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Question_Text.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="Question_Text.Text" xml:space="preserve">
+    <value>Информация о пользователе</value>
+  </data>
+  <data name="&gt;&gt;Question_Text.Name" xml:space="preserve">
+    <value>Question_Text</value>
+  </data>
+  <data name="&gt;&gt;Question_Text.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;Question_Text.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Question_Text.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ComboBoxRole.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 14pt</value>
+  </data>
+  <data name="ComboBoxRole.ItemHeight" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="ComboBoxRole.Items" xml:space="preserve">
+    <value>Админ</value>
+  </data>
+  <data name="ComboBoxRole.Items1" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="ComboBoxRole.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 264</value>
+  </data>
+  <data name="ComboBoxRole.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 36</value>
+  </data>
+  <data name="ComboBoxRole.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxRole.Name" xml:space="preserve">
+    <value>ComboBoxRole</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxRole.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxRole.Parent" xml:space="preserve">
+    <value>GroupInfo</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxRole.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="DataGridResultUsers.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DataGridResultUsers.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="DataGridResultUsers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 64</value>
+  </data>
+  <data name="DataGridResultUsers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1173, 192</value>
+  </data>
+  <data name="DataGridResultUsers.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;DataGridResultUsers.Name" xml:space="preserve">
+    <value>DataGridResultUsers</value>
+  </data>
+  <data name="&gt;&gt;DataGridResultUsers.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DataGridView, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;DataGridResultUsers.Parent" xml:space="preserve">
+    <value>GroupResult</value>
+  </data>
+  <data name="&gt;&gt;DataGridResultUsers.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GroupResult.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 15pt, style=Bold</value>
+  </data>
+  <data name="GroupResult.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 425</value>
+  </data>
+  <data name="GroupResult.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1173, 256</value>
+  </data>
+  <data name="GroupResult.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="GroupResult.Text" xml:space="preserve">
+    <value>Результаты</value>
+  </data>
+  <data name="&gt;&gt;GroupResult.Name" xml:space="preserve">
+    <value>GroupResult</value>
+  </data>
+  <data name="&gt;&gt;GroupResult.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2GroupBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;GroupResult.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GroupResult.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="TextBoxTests.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 14pt</value>
+  </data>
+  <data name="TextBoxTests.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 209</value>
+  </data>
+  <data name="TextBoxTests.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="TextBoxTests.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 50</value>
+  </data>
+  <data name="TextBoxTests.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;TextBoxTests.Name" xml:space="preserve">
+    <value>TextBoxTests</value>
+  </data>
+  <data name="&gt;&gt;TextBoxTests.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;TextBoxTests.Parent" xml:space="preserve">
+    <value>GroupInfo</value>
+  </data>
+  <data name="&gt;&gt;TextBoxTests.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="UpdateInformation.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 13pt</value>
+  </data>
+  <data name="UpdateInformation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 306</value>
+  </data>
+  <data name="UpdateInformation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 40</value>
+  </data>
+  <data name="UpdateInformation.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="UpdateInformation.Text" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="&gt;&gt;UpdateInformation.Name" xml:space="preserve">
+    <value>UpdateInformation</value>
+  </data>
+  <data name="&gt;&gt;UpdateInformation.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;UpdateInformation.Parent" xml:space="preserve">
+    <value>GroupInfo</value>
+  </data>
+  <data name="&gt;&gt;UpdateInformation.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="TextBoxEmail.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 14pt</value>
+  </data>
+  <data name="TextBoxEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 47</value>
+  </data>
+  <data name="TextBoxEmail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="TextBoxEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 50</value>
+  </data>
+  <data name="TextBoxEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;TextBoxEmail.Name" xml:space="preserve">
+    <value>TextBoxEmail</value>
+  </data>
+  <data name="&gt;&gt;TextBoxEmail.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;TextBoxEmail.Parent" xml:space="preserve">
+    <value>GroupInfo</value>
+  </data>
+  <data name="&gt;&gt;TextBoxEmail.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="TextBoxPass.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 14pt</value>
+  </data>
+  <data name="TextBoxPass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 155</value>
+  </data>
+  <data name="TextBoxPass.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="TextBoxPass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 50</value>
+  </data>
+  <data name="TextBoxPass.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;TextBoxPass.Name" xml:space="preserve">
+    <value>TextBoxPass</value>
+  </data>
+  <data name="&gt;&gt;TextBoxPass.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;TextBoxPass.Parent" xml:space="preserve">
+    <value>GroupInfo</value>
+  </data>
+  <data name="&gt;&gt;TextBoxPass.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="TextBoxLogin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 14pt</value>
+  </data>
+  <data name="TextBoxLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 101</value>
+  </data>
+  <data name="TextBoxLogin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="TextBoxLogin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 50</value>
+  </data>
+  <data name="TextBoxLogin.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;TextBoxLogin.Name" xml:space="preserve">
+    <value>TextBoxLogin</value>
+  </data>
+  <data name="&gt;&gt;TextBoxLogin.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;TextBoxLogin.Parent" xml:space="preserve">
+    <value>GroupInfo</value>
+  </data>
+  <data name="&gt;&gt;TextBoxLogin.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="GroupInfo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 15pt, style=Bold</value>
+  </data>
+  <data name="GroupInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 71</value>
+  </data>
+  <data name="GroupInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 363</value>
+  </data>
+  <data name="GroupInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="GroupInfo.Text" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="&gt;&gt;GroupInfo.Name" xml:space="preserve">
+    <value>GroupInfo</value>
+  </data>
+  <data name="&gt;&gt;GroupInfo.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2GroupBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;GroupInfo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GroupInfo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="UpdateAvatar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 13pt</value>
+  </data>
+  <data name="UpdateAvatar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 303</value>
+  </data>
+  <data name="UpdateAvatar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 40</value>
+  </data>
+  <data name="UpdateAvatar.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="UpdateAvatar.Text" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="&gt;&gt;UpdateAvatar.Name" xml:space="preserve">
+    <value>UpdateAvatar</value>
+  </data>
+  <data name="&gt;&gt;UpdateAvatar.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;UpdateAvatar.Parent" xml:space="preserve">
+    <value>GroupAvatar</value>
+  </data>
+  <data name="&gt;&gt;UpdateAvatar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PictureAvatar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 62</value>
+  </data>
+  <data name="PictureAvatar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 212</value>
+  </data>
+  <data name="PictureAvatar.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="PictureAvatar.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;PictureAvatar.Name" xml:space="preserve">
+    <value>PictureAvatar</value>
+  </data>
+  <data name="&gt;&gt;PictureAvatar.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;PictureAvatar.Parent" xml:space="preserve">
+    <value>GroupAvatar</value>
+  </data>
+  <data name="&gt;&gt;PictureAvatar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="GroupAvatar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 15pt, style=Bold</value>
+  </data>
+  <data name="GroupAvatar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>324, 71</value>
+  </data>
+  <data name="GroupAvatar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 346</value>
+  </data>
+  <data name="GroupAvatar.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="GroupAvatar.Text" xml:space="preserve">
+    <value>Аватар</value>
+  </data>
+  <data name="&gt;&gt;GroupAvatar.Name" xml:space="preserve">
+    <value>GroupAvatar</value>
+  </data>
+  <data name="&gt;&gt;GroupAvatar.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2GroupBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;GroupAvatar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GroupAvatar.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="PictureBoxInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>630, 71</value>
+  </data>
+  <data name="PictureBoxInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>556, 346</value>
+  </data>
+  <data name="PictureBoxInfo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="PictureBoxInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxInfo.Name" xml:space="preserve">
+    <value>PictureBoxInfo</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxInfo.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxInfo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxInfo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1200, 689</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>InformationUserForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

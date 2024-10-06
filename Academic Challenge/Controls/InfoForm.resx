@@ -1,0 +1,611 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Book1.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="App.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 28pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxVK.Parent" xml:space="preserve">
+    <value>GroupSocial</value>
+  </data>
+  <data name="GroupSocial.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 15pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;App.Parent" xml:space="preserve">
+    <value>GroupApp</value>
+  </data>
+  <data name="&gt;&gt;GroupSupport.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="LabelVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 50</value>
+  </data>
+  <data name="Open.Text" xml:space="preserve">
+    <value>Проверить Обновления</value>
+  </data>
+  <data name="Version.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelUser.Text" xml:space="preserve">
+    <value>Поддержка пользователей</value>
+  </data>
+  <data name="&gt;&gt;GroupAuditoria.Parent" xml:space="preserve">
+    <value>GroupApp</value>
+  </data>
+  <data name="&gt;&gt;LabelAuditoria.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="GroupApp.Text" xml:space="preserve">
+    <value>Приложение</value>
+  </data>
+  <data name="PictureBoxVK.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;GroupApp.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2GroupBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;LabelAuditoria.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="App.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="GroupSocial.Text" xml:space="preserve">
+    <value>Социальные сети</value>
+  </data>
+  <data name="GroupSocial.Size" type="System.Drawing.Size, System.Drawing">
+    <value>254, 131</value>
+  </data>
+  <data name="GroupAuditoria.Size" type="System.Drawing.Size, System.Drawing">
+    <value>549, 154</value>
+  </data>
+  <data name="GroupApp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 13</value>
+  </data>
+  <data name="GroupAuditoria.Text" xml:space="preserve">
+    <value>Аудитория</value>
+  </data>
+  <data name="GroupSocial.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="Desc.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1200, 689</value>
+  </data>
+  <data name="App.Text" xml:space="preserve">
+    <value>Academic Challenge
+</value>
+  </data>
+  <data name="&gt;&gt;App.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;GroupSocial.Parent" xml:space="preserve">
+    <value>GroupApp</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxVK.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="App.Size" type="System.Drawing.Size, System.Drawing">
+    <value>425, 43</value>
+  </data>
+  <data name="Version.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="Open.Size" type="System.Drawing.Size, System.Drawing">
+    <value>261, 38</value>
+  </data>
+  <data name="Version.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 50</value>
+  </data>
+  <data name="&gt;&gt;GroupVersion.Name" xml:space="preserve">
+    <value>GroupVersion</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>InfoForm</value>
+  </data>
+  <data name="&gt;&gt;Open.Parent" xml:space="preserve">
+    <value>GroupVersion</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PictureBoxVK.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="LabelAuditoria.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 25pt, style=Bold</value>
+  </data>
+  <data name="Support.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 14.25pt</value>
+  </data>
+  <data name="Open.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;Version.Name" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="LabelAuditoria.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;Version.Parent" xml:space="preserve">
+    <value>GroupVersion</value>
+  </data>
+  <data name="&gt;&gt;LabelAuditoria.Name" xml:space="preserve">
+    <value>LabelAuditoria</value>
+  </data>
+  <data name="Desc.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 14.25pt</value>
+  </data>
+  <data name="LabelUser.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="Open.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 13pt</value>
+  </data>
+  <data name="GroupVersion.Text" xml:space="preserve">
+    <value>Версия Приложения</value>
+  </data>
+  <data name="LabelVersion.Text" xml:space="preserve">
+    <value>Версия</value>
+  </data>
+  <data name="PictureBoxVK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="Book1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>566, 151</value>
+  </data>
+  <data name="&gt;&gt;LabelVersion.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;Desk_audotiria.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Desk_audotiria.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 14.25pt</value>
+  </data>
+  <data name="&gt;&gt;GroupApp.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxTG.Parent" xml:space="preserve">
+    <value>GroupSocial</value>
+  </data>
+  <data name="GroupApp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 15pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;GroupVersion.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Desc.Parent" xml:space="preserve">
+    <value>GroupApp</value>
+  </data>
+  <data name="Desk_audotiria.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 96</value>
+  </data>
+  <data name="Version.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 20.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="&gt;&gt;GroupSocial.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2GroupBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="GroupVersion.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 15pt, style=Bold</value>
+  </data>
+  <data name="Support.Size" type="System.Drawing.Size, System.Drawing">
+    <value>465, 42</value>
+  </data>
+  <data name="&gt;&gt;GroupSupport.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2GroupBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;Desk_audotiria.Name" xml:space="preserve">
+    <value>Desk_audotiria</value>
+  </data>
+  <data name="GroupSupport.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="LabelAuditoria.Text" xml:space="preserve">
+    <value>Целевая аудитория:</value>
+  </data>
+  <data name="&gt;&gt;LabelVersion.Name" xml:space="preserve">
+    <value>LabelVersion</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;LabelVersion.Parent" xml:space="preserve">
+    <value>GroupVersion</value>
+  </data>
+  <data name="&gt;&gt;Desk_audotiria.Parent" xml:space="preserve">
+    <value>GroupAuditoria</value>
+  </data>
+  <data name="&gt;&gt;Support.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;GroupVersion.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2GroupBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;Support.Name" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="Desc.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;GroupAuditoria.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2GroupBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="GroupSupport.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 311</value>
+  </data>
+  <data name="App.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 43</value>
+  </data>
+  <data name="Desc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1137, 42</value>
+  </data>
+  <data name="&gt;&gt;GroupAuditoria.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="LabelAuditoria.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 39</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxVK.Name" xml:space="preserve">
+    <value>PictureBoxVK</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Support.Parent" xml:space="preserve">
+    <value>GroupSupport</value>
+  </data>
+  <data name="&gt;&gt;GroupSupport.Name" xml:space="preserve">
+    <value>GroupSupport</value>
+  </data>
+  <data name="GroupSocial.Location" type="System.Drawing.Point, System.Drawing">
+    <value>306, 471</value>
+  </data>
+  <data name="LabelUser.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;Open.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Support.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 32</value>
+  </data>
+  <data name="Open.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 83</value>
+  </data>
+  <data name="LabelAuditoria.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 54</value>
+  </data>
+  <data name="&gt;&gt;GroupVersion.Parent" xml:space="preserve">
+    <value>GroupApp</value>
+  </data>
+  <data name="GroupVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>289, 131</value>
+  </data>
+  <data name="LabelUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>483, 39</value>
+  </data>
+  <data name="&gt;&gt;Book1.Parent" xml:space="preserve">
+    <value>GroupApp</value>
+  </data>
+  <data name="&gt;&gt;Book1.Name" xml:space="preserve">
+    <value>Book1</value>
+  </data>
+  <data name="GroupAuditoria.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="PictureBoxTG.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;GroupSupport.Parent" xml:space="preserve">
+    <value>GroupApp</value>
+  </data>
+  <data name="Support.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;LabelAuditoria.Parent" xml:space="preserve">
+    <value>GroupAuditoria</value>
+  </data>
+  <data name="&gt;&gt;GroupAuditoria.Name" xml:space="preserve">
+    <value>GroupAuditoria</value>
+  </data>
+  <data name="&gt;&gt;GroupApp.Name" xml:space="preserve">
+    <value>GroupApp</value>
+  </data>
+  <data name="GroupSupport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>549, 154</value>
+  </data>
+  <data name="&gt;&gt;LabelUser.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Version.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupApp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Book1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxTG.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Support.Text" xml:space="preserve">
+    <value>Для технической поддержки обращайтесь на 
+[support@academicchallenge.com]</value>
+  </data>
+  <data name="Support.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 95</value>
+  </data>
+  <data name="&gt;&gt;LabelVersion.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxVK.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Open.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="Desc.Text" xml:space="preserve">
+    <value>Это интерактивное приложение для подготовки к тестам. Оно предлагает пользователям широкий спектр тестов 
+по различным предметам, помогает улучшить знания и уверенность перед важными испытаниями.</value>
+  </data>
+  <data name="LabelUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 53</value>
+  </data>
+  <data name="&gt;&gt;LabelUser.Name" xml:space="preserve">
+    <value>LabelUser</value>
+  </data>
+  <data name="&gt;&gt;Support.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Book1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="LabelVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="Version.Text" xml:space="preserve">
+    <value>1.0.0</value>
+  </data>
+  <data name="&gt;&gt;LabelUser.Parent" xml:space="preserve">
+    <value>GroupSupport</value>
+  </data>
+  <data name="&gt;&gt;Desk_audotiria.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GroupAuditoria.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 151</value>
+  </data>
+  <data name="&gt;&gt;Desc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Desc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 86</value>
+  </data>
+  <data name="Desk_audotiria.Size" type="System.Drawing.Size, System.Drawing">
+    <value>544, 42</value>
+  </data>
+  <data name="GroupApp.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;Desc.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;Open.Name" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="PictureBoxTG.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="App.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;Desc.Name" xml:space="preserve">
+    <value>Desc</value>
+  </data>
+  <data name="&gt;&gt;App.Name" xml:space="preserve">
+    <value>App</value>
+  </data>
+  <data name="&gt;&gt;Version.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="GroupSupport.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 15pt, style=Bold</value>
+  </data>
+  <data name="GroupSupport.Text" xml:space="preserve">
+    <value>Поддержка</value>
+  </data>
+  <data name="GroupAuditoria.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 15pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;GroupSocial.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PictureBoxTG.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 59</value>
+  </data>
+  <data name="GroupApp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1166, 673</value>
+  </data>
+  <data name="Book1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>593, 451</value>
+  </data>
+  <data name="Desk_audotiria.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;GroupSocial.Name" xml:space="preserve">
+    <value>GroupSocial</value>
+  </data>
+  <data name="&gt;&gt;Book1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxTG.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="PictureBoxTG.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="LabelVersion.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Kanit Cyrillic, 20.25pt, style=Bold</value>
+  </data>
+  <data name="Desk_audotiria.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="Desk_audotiria.Text" xml:space="preserve">
+    <value>Студенты, школьники и все, кто хочет улучшить свои 
+знания.
+</value>
+  </data>
+  <data name="PictureBoxVK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 59</value>
+  </data>
+  <data name="GroupVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 471</value>
+  </data>
+  <data name="Version.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 30</value>
+  </data>
+  <data name="&gt;&gt;PictureBoxTG.Name" xml:space="preserve">
+    <value>PictureBoxTG</value>
+  </data>
+  <data name="&gt;&gt;App.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelUser.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
+  </data>
+  <data name="GroupVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en-US</value>
+  </metadata>
+</root>

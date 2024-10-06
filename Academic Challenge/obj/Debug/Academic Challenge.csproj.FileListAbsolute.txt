@@ -1,0 +1,97 @@
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\Academic Challenge.exe.config
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\Academic Challenge.exe
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\Academic Challenge.pdb
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\Guna.UI2.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic Challenge.csproj.AssemblyReference.cache
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.MainForm.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.Properties.Resources.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic Challenge.csproj.GenerateResource.cache
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic Challenge.csproj.CoreCompileInputs.cache
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic.3E790B32.Up2Date
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic Challenge.exe
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic Challenge.pdb
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.RegistrationsForm.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.AuthorizationForm.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.MainAuthForm.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.TestsForm.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.SubjectsForm.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.ProfileForm.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.QuestionsForm.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.InfoForm.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.AddSubjectsForm.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.AddTestsForm.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.UsersForm.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.TopUserForm.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.InformationUserForm.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.UserResultForm.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.ChangeSubjectForm.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.ChangeTestForm.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.Forms.AddQuestionsForm.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.Forms.RecoverUserForm.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\en-US\Academic Challenge.resources.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.MainForm.en-US.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\en-US\Academic Challenge.resources.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.ProfileForm.en-US.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.UsersForm.en-US.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.SubjectsForm.en-US.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.TestsForm.en-US.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.TopUserForm.en-US.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.InformationUserForm.en-US.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.InfoForm.en-US.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.Forms.AddQuestionsForm.en-US.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.AddSubjectsForm.en-US.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.AddTestsForm.en-US.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.ChangeSubjectForm.en-US.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.ChangeTestForm.en-US.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.UserResultForm.en-US.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.MainAuthForm.en-US.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.Controls.AllQuestionForm.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.Forms.ChangeQuestionForm.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.Forms.ChangeQuestionForm.en-US.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.Controls.AllQuestionForm.en-US.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.LanguageStrings.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\BouncyCastle.Cryptography.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\Google.Protobuf.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\K4os.Compression.LZ4.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\K4os.Hash.xxHash.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\MySql.Data.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.Buffers.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.IO.Pipelines.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.Memory.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.Numerics.Vectors.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\ZstdSharp.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\BouncyCastle.Cryptography.xml
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\Google.Protobuf.pdb
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\Google.Protobuf.xml
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\K4os.Compression.LZ4.xml
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\K4os.Hash.xxHash.xml
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\MySql.Data.xml
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.Buffers.xml
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.IO.Pipelines.xml
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.Memory.xml
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.Numerics.Vectors.xml
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.Forms.RecoverUserForm.en-US.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.RegistrationsForm.en-US.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.AuthorizationForm.en-US.resources
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.Text.Encodings.Web.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.Text.Json.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.ValueTuple.dll
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.Text.Encodings.Web.xml
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.Text.Json.xml
+D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.ValueTuple.xml
