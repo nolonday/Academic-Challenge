@@ -104,7 +104,7 @@
             this.GroupBoxAnswer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
             this.GroupBoxAnswer.Location = new System.Drawing.Point(185, 169);
             this.GroupBoxAnswer.Name = "GroupBoxAnswer";
-            this.GroupBoxAnswer.Size = new System.Drawing.Size(847, 278);
+            this.GroupBoxAnswer.Size = new System.Drawing.Size(847, 359);
             this.GroupBoxAnswer.TabIndex = 3;
             this.GroupBoxAnswer.Text = "Ответы";
             this.GroupBoxAnswer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

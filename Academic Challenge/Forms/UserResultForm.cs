@@ -22,6 +22,8 @@ namespace Academic_Challenge
             methods.UserResult(score_id); // Получение результата пользователя
             ComboBoxScore.Text = Methods.ScoreResult.ToString(); // Установка текста в комбобокс
             this.informationUserForml = informationUserForml; // Сохранение ссылки на форму пользователя
+            ApplyLanguage();
+            ApplyTheme();
         }
 
         // Метод для закрытия формы при двойном щелчке на текст оценки
@@ -109,6 +111,21 @@ namespace Academic_Challenge
             else if (Properties.Settings.Default.Theme == "Black")
             {
                 UpdateScore.FillColor = Color.Black;
+            }
+        }
+
+        // Метод для смены языка
+        private void ApplyLanguage()
+        {
+            if (Properties.Settings.Default.Language == "ru-RU")
+            {
+                Score_Text.Text = "Оценка";
+                UpdateScore.Text = "Изменить";
+            }
+            else
+            {
+                Score_Text.Text = "Rating";
+                UpdateScore.Text = "Edit";
             }
         }
     }

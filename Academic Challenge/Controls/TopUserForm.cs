@@ -18,6 +18,7 @@ namespace Academic_Challenge
         {
             InitializeComponent();
             LoadGrid(); // Загружаем данные в DataGrid при инициализации
+            ApplyLanguage();
             ApplyTheme();
         }
 
@@ -82,6 +83,19 @@ namespace Academic_Challenge
             {
                 DataGridTops.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
                 DataGridTops.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.Black;
+            }
+        }
+
+        // Метод для смены языка
+        private void ApplyLanguage()
+        {
+            if (Properties.Settings.Default.Language == "ru-RU")
+            {
+                LabelUser.Text = "Топ пользователей";
+            }
+            else
+            {
+                LabelUser.Text = "Top Users";
             }
         }
     }

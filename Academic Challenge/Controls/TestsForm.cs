@@ -19,6 +19,7 @@ namespace Academic_Challenge
             InitializeComponent();
             this.subject_id = subject_id; // Сохраняем ID предмета
             this.mainAuthForm = mainAuthForm; // Сохраняем ссылку на основную форму
+            ApplyLanguage();
             ApplyTheme();
         }
 
@@ -167,7 +168,14 @@ namespace Academic_Challenge
                     if (methods.HasQuestions(id))
                     {
                         mainAuthForm.LoadQuestions(id, subject_id); // Загружаем вопросы теста
-                        mainAuthForm.DisableClick();
+                        if (Methods.Role == "Админ" || Properties.Settings.Default.Role == "Админ")
+                        {
+                            mainAuthForm.EnableClick();
+                        }
+                        else
+                        {
+                            mainAuthForm.DisableClick();
+                        }
                     }
                     else
                     {
@@ -210,9 +218,22 @@ namespace Academic_Challenge
         }
 
         // Метод открытие предметов
-        private void LabelTest_Click(object sender, EventArgs e)
+        private void LabelTest_Click_1(object sender, EventArgs e)
         {
             mainAuthForm.LoadSubjects();
+        }
+
+        // Метод для смены языка
+        private void ApplyLanguage()
+        {
+            if (Properties.Settings.Default.Language == "ru-RU")
+            {
+                LabelTest.Text = "Выберите Тест";
+            }
+            else
+            {
+                LabelTest.Text = "Select Test";
+            }
         }
     }
 }

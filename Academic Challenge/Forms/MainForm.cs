@@ -16,6 +16,7 @@ namespace Academic_Challenge
             InitializeTimer(); // Инициализация таймера
             InitializeCulture(); // Инициализация культуры
             InitializeComponent(); // Инициализация компонентов формы
+            ApplyLanguage();
             ApplyTheme(); // Применение темы           
         }
 
@@ -143,6 +144,28 @@ namespace Academic_Challenge
             {
                 PanelUp.BackColor = Color.Black; // Цвет верхней панели для темы "Чёрный"
                 Button_Tests.FillColor = Color.Black; // Цвет кнопки "Тесты" для темы "Чёрный"
+            }
+        }
+
+        // Метод для смены языка
+        private void ApplyLanguage()
+        {
+            if (Properties.Settings.Default.Language == "ru-RU")
+            {
+                Tests_Text.Text = "Образовательные \r\nТесты";
+                Text1.Text = "✓ Различные уровни сложности";
+                Text2.Text = "✓ Разные виды тестов";
+                Text3.Text = "✓ Доска лидеров\r\n";
+                Button_Tests.Text = "К тестам";
+
+            }
+            else
+            {
+                Tests_Text.Text = "Educational tests";
+                Text1.Text = "✓ Various difficulty levels";
+                Text2.Text = "✓ Different types of tests";
+                Text3.Text = "✓ Leaderboard\r\n";
+                Button_Tests.Text = "To the tests";
             }
         }
     }

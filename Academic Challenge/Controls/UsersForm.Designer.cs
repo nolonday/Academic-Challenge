@@ -28,27 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsersForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.Question_Text = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.User_Text = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.DataGridUsers = new Guna.UI2.WinForms.Guna2DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridUsers)).BeginInit();
             this.SuspendLayout();
             // 
-            // Question_Text
+            // User_Text
             // 
-            resources.ApplyResources(this.Question_Text, "Question_Text");
-            this.Question_Text.BackColor = System.Drawing.Color.Transparent;
-            this.Question_Text.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
-            this.Question_Text.IsSelectionEnabled = false;
-            this.Question_Text.Name = "Question_Text";
+            this.User_Text.BackColor = System.Drawing.Color.Transparent;
+            this.User_Text.Font = new System.Drawing.Font("Kanit Cyrillic", 40F, System.Drawing.FontStyle.Bold);
+            this.User_Text.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
+            this.User_Text.IsSelectionEnabled = false;
+            this.User_Text.Location = new System.Drawing.Point(3, 0);
+            this.User_Text.Name = "User_Text";
+            this.User_Text.Size = new System.Drawing.Size(406, 62);
+            this.User_Text.TabIndex = 15;
+            this.User_Text.Text = "Пользователи";
             // 
             // DataGridUsers
             // 
-            resources.ApplyResources(this.DataGridUsers, "DataGridUsers");
             this.DataGridUsers.AllowUserToAddRows = false;
             this.DataGridUsers.AllowUserToDeleteRows = false;
             this.DataGridUsers.AllowUserToResizeRows = false;
@@ -67,6 +69,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DataGridUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DataGridUsers.ColumnHeadersHeight = 50;
             this.DataGridUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
@@ -76,7 +79,9 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DataGridUsers.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DataGridUsers.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.DataGridUsers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
+            this.DataGridUsers.Location = new System.Drawing.Point(0, 64);
             this.DataGridUsers.Name = "DataGridUsers";
             this.DataGridUsers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -89,6 +94,8 @@
             this.DataGridUsers.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.DataGridUsers.RowHeadersVisible = false;
             this.DataGridUsers.RowTemplate.Height = 50;
+            this.DataGridUsers.Size = new System.Drawing.Size(1200, 625);
+            this.DataGridUsers.TabIndex = 16;
             this.DataGridUsers.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.DataGridUsers.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Kanit Cyrillic", 15F);
             this.DataGridUsers.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -114,12 +121,13 @@
             // 
             // UsersForm
             // 
-            resources.ApplyResources(this, "$this");
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.DataGridUsers);
-            this.Controls.Add(this.Question_Text);
+            this.Controls.Add(this.User_Text);
             this.Name = "UsersForm";
+            this.Size = new System.Drawing.Size(1200, 689);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridUsers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -128,7 +136,7 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2HtmlLabel Question_Text;
+        private Guna.UI2.WinForms.Guna2HtmlLabel User_Text;
         private Guna.UI2.WinForms.Guna2DataGridView DataGridUsers;
     }
 }

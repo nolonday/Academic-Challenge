@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Security.Cryptography;
 using System.Windows.Forms;
 
 namespace Academic_Challenge
@@ -20,7 +21,8 @@ namespace Academic_Challenge
             this.test_id = test_id;
             this.subjectId = subjectId;
             this.authForm = mainAuthForm;
-            LoadQuestion(); // Загружаем первый вопрос
+            LoadQuestion(); // Загружаем текущий вопрос
+            ApplyLanguage();
             ApplyTheme();
         }
 
@@ -40,14 +42,13 @@ namespace Academic_Challenge
                 SaveTestResults(); // Если вопросов больше нет, сохраняем результаты теста
                 return;
             }
-            // Сначала очищаем текст описания вопроса
-            Desc_Text.Text = ""; // Очищаем текст
 
             // Загружаем вопрос по индексу
             methods.LoadQuestionByIndex(test_id, currentQuestionIndex, Desc_Text, ButtonA, ButtonB, ButtonC, ButtonD);
 
+
             // Обновляем текст вопроса только здесь
-            Question_Text.Text = $"Вопрос {currentQuestionIndex + 1}"; // Обновляем текст вопроса
+            Question_Text.Text = Properties.Settings.Default.Language == "ru-RU" ? $"Вопрос {currentQuestionIndex + 1}" : $"Question {currentQuestionIndex + 1}"; // Обновляем текст вопроса
         }
 
         // Метод для получения выбранного ответа
@@ -142,9 +143,8 @@ namespace Academic_Challenge
             }
 
             // Показать правильный и выбранный ответ
-            string message = $"Ваш ответ: {selectedAnswer}\nПравильный ответ: {correctAnswer}";
+            string message = Properties.Settings.Default.Language == "ru-RU" ? $"Ваш ответ: {selectedAnswer}\nПравильный ответ: {correctAnswer}" : $"Your answer: {selectedAnswer}\nCorrect answer: {correctAnswer}";
             MessageBox.Show(message);
-
             // Переходим к следующему вопросу
             currentQuestionIndex++; // Переходим к следующему вопросу
             LoadQuestion(); // Загружаем следующий вопрос
@@ -157,8 +157,10 @@ namespace Academic_Challenge
             bool resultSaved = methods.CalculateAndSaveScore(Methods.User_ID, test_id, correctAnswersCount);
             bool update = methods.UpdateUserCompletedTest(Methods.User_ID);
 
+           
+
             // Определяем сообщения в зависимости от языка
-            string successMessage = Properties.Settings.Default.Language == "ru-RU" ?"Тест пройден, результаты можно посмотреть в профиле!" : "Test completed, you can view the results in your profile!";
+            string successMessage = Properties.Settings.Default.Language == "ru-RU" ? "Тест пройден, результаты можно посмотреть в профиле!" : "Test completed, you can view the results in your profile!";
             string errorMessage = Properties.Settings.Default.Language == "ru-RU" ? "Произошла ошибка при сохранении результатов." : "An error occurred while saving the results.";
 
             if (resultSaved && update)
@@ -172,9 +174,7 @@ namespace Academic_Challenge
 
             authForm.EnableClick();
             authForm.LoadSubjects(); // Загружаем предметы в основной форме
-
         }
-
         // Метод темы
         private void ApplyTheme()
         {
@@ -196,6 +196,23 @@ namespace Academic_Challenge
                 ButtonC.ForeColor = Color.Black;
                 ButtonA.ForeColor = Color.Black;
                 ButtonB.ForeColor = Color.Black;
+            }
+        }
+
+        // Метод для смены языка
+        private void ApplyLanguage()
+        {
+            if (Properties.Settings.Default.Language == "ru-RU")
+            {
+                Question_Text.Text = "Вопрос";
+                GroupBoxAnswer.Text = "Ответы";
+                Save_Question.Text = "Ответить";
+            }
+            else
+            {
+                Question_Text.Text = "Question";
+                GroupBoxAnswer.Text = "Answers";
+                Save_Question.Text = "Answer";
             }
         }
     }

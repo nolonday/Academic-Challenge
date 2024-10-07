@@ -10,9 +10,8 @@ namespace Academic_Challenge
         public AuthorizationForm()
         {
             InitializeComponent(); // Инициализация компонентов формы
+            ApplyLanguage();
             ApplyTheme();
-            TextBoxLogin.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.Login_US : LanguageStrings.Login);
-            TextBoxPass.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.Password_US : LanguageStrings.Password);
         }
 
         // Метод, вызываемый при нажатии на кнопку "Регистрация"
@@ -114,6 +113,30 @@ namespace Academic_Challenge
                 TextBoxLogin.FocusedState.BorderColor = Color.Black;
                 TextBoxPass.FocusedState.BorderColor = Color.Black;
                 ButtonEnter.FillColor = Color.Black;
+            }
+        }
+
+        // Метод для смены языка
+        private void ApplyLanguage()
+        {
+            if (Properties.Settings.Default.Language == "ru-RU")
+            {
+                TextBoxLogin.PlaceholderText = LanguageStrings.Login;
+                TextBoxPass.PlaceholderText = LanguageStrings.Password;
+                Auth_Text.Text = "Авторизация";
+                ReturnPass.Text = "Забыли пароль?";
+                ButtonEnter.Text = "Войти";
+                RegistrationForm.Text = "Регистрация";
+
+            }
+            else
+            {
+                TextBoxLogin.PlaceholderText = LanguageStrings.Login_US;
+                TextBoxPass.PlaceholderText = LanguageStrings.Password_US;
+                Auth_Text.Text = "Authorization";
+                ReturnPass.Text = "Forgot your password?";
+                ButtonEnter.Text = "Log in";
+                RegistrationForm.Text = "Registration";
             }
         }
     }

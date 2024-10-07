@@ -46,10 +46,14 @@
             // Auth_Text
             // 
             this.Auth_Text.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.Auth_Text, "Auth_Text");
+            this.Auth_Text.Font = new System.Drawing.Font("Kanit Cyrillic", 40F, System.Drawing.FontStyle.Bold);
             this.Auth_Text.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
             this.Auth_Text.IsSelectionEnabled = false;
+            this.Auth_Text.Location = new System.Drawing.Point(427, 88);
             this.Auth_Text.Name = "Auth_Text";
+            this.Auth_Text.Size = new System.Drawing.Size(372, 62);
+            this.Auth_Text.TabIndex = 7;
+            this.Auth_Text.Text = "Авторизация";
             // 
             // ButtonEnter
             // 
@@ -60,9 +64,13 @@
             this.ButtonEnter.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.ButtonEnter.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.ButtonEnter.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(8)))), ((int)(((byte)(91)))));
-            resources.ApplyResources(this.ButtonEnter, "ButtonEnter");
+            this.ButtonEnter.Font = new System.Drawing.Font("Kanit Cyrillic", 22F, System.Drawing.FontStyle.Bold);
             this.ButtonEnter.ForeColor = System.Drawing.Color.White;
+            this.ButtonEnter.Location = new System.Drawing.Point(468, 372);
             this.ButtonEnter.Name = "ButtonEnter";
+            this.ButtonEnter.Size = new System.Drawing.Size(300, 60);
+            this.ButtonEnter.TabIndex = 13;
+            this.ButtonEnter.Text = "Войти";
             this.ButtonEnter.Click += new System.EventHandler(this.ButtonEnter_Click);
             // 
             // TextBoxPass
@@ -74,14 +82,18 @@
             this.TextBoxPass.DefaultText = "";
             this.TextBoxPass.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
             this.TextBoxPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(8)))), ((int)(((byte)(91)))));
-            resources.ApplyResources(this.TextBoxPass, "TextBoxPass");
+            this.TextBoxPass.Font = new System.Drawing.Font("Kanit Cyrillic", 18F);
             this.TextBoxPass.ForeColor = System.Drawing.Color.Black;
             this.TextBoxPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
+            this.TextBoxPass.Location = new System.Drawing.Point(468, 269);
+            this.TextBoxPass.Margin = new System.Windows.Forms.Padding(2);
             this.TextBoxPass.Name = "TextBoxPass";
             this.TextBoxPass.PasswordChar = '●';
             this.TextBoxPass.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
             this.TextBoxPass.PlaceholderText = "Пароль";
             this.TextBoxPass.SelectedText = "";
+            this.TextBoxPass.Size = new System.Drawing.Size(300, 50);
+            this.TextBoxPass.TabIndex = 12;
             this.TextBoxPass.UseSystemPasswordChar = true;
             // 
             // TextBoxLogin
@@ -93,31 +105,43 @@
             this.TextBoxLogin.DefaultText = "";
             this.TextBoxLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
             this.TextBoxLogin.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(8)))), ((int)(((byte)(91)))));
-            resources.ApplyResources(this.TextBoxLogin, "TextBoxLogin");
+            this.TextBoxLogin.Font = new System.Drawing.Font("Kanit Cyrillic", 18F);
             this.TextBoxLogin.ForeColor = System.Drawing.Color.Black;
             this.TextBoxLogin.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
+            this.TextBoxLogin.Location = new System.Drawing.Point(468, 211);
+            this.TextBoxLogin.Margin = new System.Windows.Forms.Padding(2);
             this.TextBoxLogin.Name = "TextBoxLogin";
             this.TextBoxLogin.PasswordChar = '\0';
             this.TextBoxLogin.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
             this.TextBoxLogin.PlaceholderText = "Логин";
             this.TextBoxLogin.SelectedText = "";
+            this.TextBoxLogin.Size = new System.Drawing.Size(300, 50);
+            this.TextBoxLogin.TabIndex = 11;
             // 
             // RegistrationForm
             // 
             this.RegistrationForm.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.RegistrationForm, "RegistrationForm");
+            this.RegistrationForm.Font = new System.Drawing.Font("Kanit Cyrillic", 22F);
             this.RegistrationForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
             this.RegistrationForm.IsSelectionEnabled = false;
+            this.RegistrationForm.Location = new System.Drawing.Point(520, 438);
             this.RegistrationForm.Name = "RegistrationForm";
+            this.RegistrationForm.Size = new System.Drawing.Size(191, 35);
+            this.RegistrationForm.TabIndex = 14;
+            this.RegistrationForm.Text = "Регистрация";
             this.RegistrationForm.Click += new System.EventHandler(this.RegistrationForm_Click);
             // 
             // ReturnPass
             // 
             this.ReturnPass.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.ReturnPass, "ReturnPass");
+            this.ReturnPass.Font = new System.Drawing.Font("Kanit Cyrillic", 15F, System.Drawing.FontStyle.Bold);
             this.ReturnPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
             this.ReturnPass.IsSelectionEnabled = false;
+            this.ReturnPass.Location = new System.Drawing.Point(589, 324);
             this.ReturnPass.Name = "ReturnPass";
+            this.ReturnPass.Size = new System.Drawing.Size(179, 25);
+            this.ReturnPass.TabIndex = 15;
+            this.ReturnPass.Text = "Забыли пароль?";
             this.ReturnPass.Click += new System.EventHandler(this.ReturnPass_Click);
             // 
             // FormSettings
@@ -133,8 +157,11 @@
             // 
             this.Book1.Image = global::Academic_Challenge.Properties.Resources.book3;
             this.Book1.ImageRotate = 0F;
-            resources.ApplyResources(this.Book1, "Book1");
+            this.Book1.Location = new System.Drawing.Point(21, 88);
             this.Book1.Name = "Book1";
+            this.Book1.Size = new System.Drawing.Size(400, 344);
+            this.Book1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Book1.TabIndex = 6;
             this.Book1.TabStop = false;
             // 
             // Logo
@@ -142,17 +169,21 @@
             this.Logo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Logo.Image = global::Academic_Challenge.Properties.Resources.logo;
             this.Logo.ImageRotate = 0F;
-            resources.ApplyResources(this.Logo, "Logo");
+            this.Logo.Location = new System.Drawing.Point(12, 12);
             this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(80, 80);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Logo.TabIndex = 3;
             this.Logo.TabStop = false;
             this.Logo.Click += new System.EventHandler(this.Logo_Click);
             this.Logo.DoubleClick += new System.EventHandler(this.Logo_DoubleClick);
             // 
             // AuthorizationForm
             // 
-            resources.ApplyResources(this, "$this");
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(800, 500);
             this.Controls.Add(this.ReturnPass);
             this.Controls.Add(this.RegistrationForm);
             this.Controls.Add(this.ButtonEnter);
@@ -162,7 +193,12 @@
             this.Controls.Add(this.Book1);
             this.Controls.Add(this.Logo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(800, 500);
+            this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "AuthorizationForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Авторизация";
             ((System.ComponentModel.ISupportInitialize)(this.Book1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);

@@ -27,11 +27,7 @@ namespace Academic_Challenge.Forms
             TextBoxC.Text = Methods.Answer_C; // Заполнение текстового поля ответа C
             TextBoxD.Text = Methods.Answer_D; // Заполнение текстового поля ответа D
             ComboBoxAnswer.Text = Methods.Correct_Answer; // Установка правильного ответа в комбобокс
-            TextBoxName.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.Question_US : LanguageStrings.Question);
-            TextBoxA.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.AnswerA_US : LanguageStrings.AnswerA);
-            TextBoxB.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.AnswerB_US : LanguageStrings.AnswerB);
-            TextBoxC.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.AnswerC_US : LanguageStrings.AnswerC);
-            TextBoxD.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.AnswerD_US : LanguageStrings.AnswerD);
+            ApplyLanguage();
             ApplyTheme(); // Применение темы оформления
         }
         // Обработчик текста на изменение позиции
@@ -119,6 +115,31 @@ namespace Academic_Challenge.Forms
                 TextBoxC.FocusedState.BorderColor = Color.Black;
                 TextBoxD.FocusedState.BorderColor = Color.Black;
                 ComboBoxAnswer.FocusedState.BorderColor = Color.Black;
+            }
+        }
+
+        // Метод для смены языка
+        private void ApplyLanguage()
+        {
+            if (Properties.Settings.Default.Language == "ru-RU")
+            {
+                TextBoxName.PlaceholderText = LanguageStrings.Question;
+                TextBoxA.PlaceholderText = LanguageStrings.AnswerA;
+                TextBoxB.PlaceholderText = LanguageStrings.AnswerB;
+                TextBoxC.PlaceholderText = LanguageStrings.AnswerC;
+                TextBoxD.PlaceholderText = LanguageStrings.AnswerD;
+                Test_Text.Text = "Изменить вопрос";
+                ChgQuestion.Text = "Изменить";
+            }
+            else
+            {
+                TextBoxName.PlaceholderText = LanguageStrings.Question_US;
+                TextBoxA.PlaceholderText = LanguageStrings.AnswerA_US;
+                TextBoxB.PlaceholderText = LanguageStrings.AnswerB_US;
+                TextBoxC.PlaceholderText = LanguageStrings.AnswerC_US;
+                TextBoxD.PlaceholderText = LanguageStrings.AnswerD_US;
+                Test_Text.Text = "Edit the question";
+                ChgQuestion.Text = "Change";
             }
         }
     }

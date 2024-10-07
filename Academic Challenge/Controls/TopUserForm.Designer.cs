@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TopUserForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -41,10 +40,14 @@
             // LabelUser
             // 
             this.LabelUser.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.LabelUser, "LabelUser");
+            this.LabelUser.Font = new System.Drawing.Font("Kanit Cyrillic", 40F, System.Drawing.FontStyle.Bold);
             this.LabelUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
             this.LabelUser.IsSelectionEnabled = false;
+            this.LabelUser.Location = new System.Drawing.Point(175, 3);
             this.LabelUser.Name = "LabelUser";
+            this.LabelUser.Size = new System.Drawing.Size(550, 62);
+            this.LabelUser.TabIndex = 14;
+            this.LabelUser.Text = "Топ пользователей";
             // 
             // DataGridTops
             // 
@@ -66,7 +69,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DataGridTops.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            resources.ApplyResources(this.DataGridTops, "DataGridTops");
+            this.DataGridTops.ColumnHeadersHeight = 50;
             this.DataGridTops.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
@@ -77,6 +80,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DataGridTops.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGridTops.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
+            this.DataGridTops.Location = new System.Drawing.Point(175, 68);
             this.DataGridTops.Name = "DataGridTops";
             this.DataGridTops.ReadOnly = true;
             this.DataGridTops.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -90,6 +94,8 @@
             this.DataGridTops.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.DataGridTops.RowHeadersVisible = false;
             this.DataGridTops.RowTemplate.Height = 80;
+            this.DataGridTops.Size = new System.Drawing.Size(850, 615);
+            this.DataGridTops.TabIndex = 13;
             this.DataGridTops.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.DataGridTops.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Kanit Cyrillic", 15F);
             this.DataGridTops.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -115,12 +121,13 @@
             // 
             // TopUserForm
             // 
-            resources.ApplyResources(this, "$this");
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.LabelUser);
             this.Controls.Add(this.DataGridTops);
             this.Name = "TopUserForm";
+            this.Size = new System.Drawing.Size(1200, 689);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridTops)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

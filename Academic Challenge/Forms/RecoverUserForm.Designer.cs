@@ -55,8 +55,11 @@
             // 
             this.Recover.Image = global::Academic_Challenge.Properties.Resources.recover;
             this.Recover.ImageRotate = 0F;
-            resources.ApplyResources(this.Recover, "Recover");
+            this.Recover.Location = new System.Drawing.Point(21, 98);
             this.Recover.Name = "Recover";
+            this.Recover.Size = new System.Drawing.Size(374, 344);
+            this.Recover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Recover.TabIndex = 6;
             this.Recover.TabStop = false;
             // 
             // Logo
@@ -64,18 +67,25 @@
             this.Logo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Logo.Image = global::Academic_Challenge.Properties.Resources.logo;
             this.Logo.ImageRotate = 0F;
-            resources.ApplyResources(this.Logo, "Logo");
+            this.Logo.Location = new System.Drawing.Point(12, 12);
             this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(80, 80);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Logo.TabIndex = 3;
             this.Logo.TabStop = false;
             this.Logo.Click += new System.EventHandler(this.Logo_Click);
             // 
             // Recover_Text
             // 
             this.Recover_Text.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.Recover_Text, "Recover_Text");
+            this.Recover_Text.Font = new System.Drawing.Font("Kanit Cyrillic", 30F, System.Drawing.FontStyle.Bold);
             this.Recover_Text.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
             this.Recover_Text.IsSelectionEnabled = false;
+            this.Recover_Text.Location = new System.Drawing.Point(427, 88);
             this.Recover_Text.Name = "Recover_Text";
+            this.Recover_Text.Size = new System.Drawing.Size(351, 47);
+            this.Recover_Text.TabIndex = 7;
+            this.Recover_Text.Text = "Восстановление";
             // 
             // TextBoxPass
             // 
@@ -86,14 +96,18 @@
             this.TextBoxPass.DefaultText = "";
             this.TextBoxPass.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
             this.TextBoxPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(8)))), ((int)(((byte)(91)))));
-            resources.ApplyResources(this.TextBoxPass, "TextBoxPass");
+            this.TextBoxPass.Font = new System.Drawing.Font("Kanit Cyrillic", 18F);
             this.TextBoxPass.ForeColor = System.Drawing.Color.Black;
             this.TextBoxPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
+            this.TextBoxPass.Location = new System.Drawing.Point(468, 266);
+            this.TextBoxPass.Margin = new System.Windows.Forms.Padding(2);
             this.TextBoxPass.Name = "TextBoxPass";
             this.TextBoxPass.PasswordChar = '●';
             this.TextBoxPass.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
             this.TextBoxPass.PlaceholderText = "Пароль";
             this.TextBoxPass.SelectedText = "";
+            this.TextBoxPass.Size = new System.Drawing.Size(300, 50);
+            this.TextBoxPass.TabIndex = 14;
             this.TextBoxPass.UseSystemPasswordChar = true;
             // 
             // TextBoxLogin
@@ -105,14 +119,18 @@
             this.TextBoxLogin.DefaultText = "";
             this.TextBoxLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
             this.TextBoxLogin.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(8)))), ((int)(((byte)(91)))));
-            resources.ApplyResources(this.TextBoxLogin, "TextBoxLogin");
+            this.TextBoxLogin.Font = new System.Drawing.Font("Kanit Cyrillic", 18F);
             this.TextBoxLogin.ForeColor = System.Drawing.Color.Black;
             this.TextBoxLogin.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
+            this.TextBoxLogin.Location = new System.Drawing.Point(468, 158);
+            this.TextBoxLogin.Margin = new System.Windows.Forms.Padding(2);
             this.TextBoxLogin.Name = "TextBoxLogin";
             this.TextBoxLogin.PasswordChar = '\0';
             this.TextBoxLogin.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
             this.TextBoxLogin.PlaceholderText = "Логин";
             this.TextBoxLogin.SelectedText = "";
+            this.TextBoxLogin.Size = new System.Drawing.Size(300, 50);
+            this.TextBoxLogin.TabIndex = 13;
             this.TextBoxLogin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxLogin_KeyDown);
             // 
             // ButtonRecover
@@ -124,9 +142,13 @@
             this.ButtonRecover.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.ButtonRecover.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.ButtonRecover.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(8)))), ((int)(((byte)(91)))));
-            resources.ApplyResources(this.ButtonRecover, "ButtonRecover");
+            this.ButtonRecover.Font = new System.Drawing.Font("Kanit Cyrillic", 22F, System.Drawing.FontStyle.Bold);
             this.ButtonRecover.ForeColor = System.Drawing.Color.White;
+            this.ButtonRecover.Location = new System.Drawing.Point(468, 372);
             this.ButtonRecover.Name = "ButtonRecover";
+            this.ButtonRecover.Size = new System.Drawing.Size(300, 60);
+            this.ButtonRecover.TabIndex = 15;
+            this.ButtonRecover.Text = "Востановить";
             this.ButtonRecover.Click += new System.EventHandler(this.ButtonRecover_Click);
             // 
             // TextBoxCode
@@ -138,21 +160,26 @@
             this.TextBoxCode.DefaultText = "";
             this.TextBoxCode.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
             this.TextBoxCode.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(8)))), ((int)(((byte)(91)))));
-            resources.ApplyResources(this.TextBoxCode, "TextBoxCode");
+            this.TextBoxCode.Font = new System.Drawing.Font("Kanit Cyrillic", 18F);
             this.TextBoxCode.ForeColor = System.Drawing.Color.Black;
             this.TextBoxCode.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
+            this.TextBoxCode.Location = new System.Drawing.Point(468, 212);
+            this.TextBoxCode.Margin = new System.Windows.Forms.Padding(2);
             this.TextBoxCode.Name = "TextBoxCode";
             this.TextBoxCode.PasswordChar = '\0';
             this.TextBoxCode.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
             this.TextBoxCode.PlaceholderText = "Код";
             this.TextBoxCode.SelectedText = "";
+            this.TextBoxCode.Size = new System.Drawing.Size(300, 50);
+            this.TextBoxCode.TabIndex = 16;
             this.TextBoxCode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxCode_KeyDown);
             // 
             // RecoverUserForm
             // 
-            resources.ApplyResources(this, "$this");
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(800, 500);
             this.Controls.Add(this.TextBoxCode);
             this.Controls.Add(this.ButtonRecover);
             this.Controls.Add(this.TextBoxPass);
@@ -161,7 +188,12 @@
             this.Controls.Add(this.Recover);
             this.Controls.Add(this.Logo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(800, 500);
+            this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "RecoverUserForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Восстановить Пароль";
             ((System.ComponentModel.ISupportInitialize)(this.Recover)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);

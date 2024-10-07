@@ -28,8 +28,7 @@ namespace Academic_Challenge
             int userId = Methods.User_ID;
             LoadUserProfile(userId); // Загружаем профиль пользователя
             LoadGrid(userId); // Загружаем результаты тестов в DataGrid
-            TextBoxLogin.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.Login_US : LanguageStrings.Login);
-            TextBoxPass.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.Password_US : LanguageStrings.Password);
+            ApplyLanguage();
             ApplyTheme(); // Применение темы
         }
 
@@ -299,6 +298,39 @@ namespace Academic_Challenge
                 GroupResult.CustomBorderColor = Color.Black;
                 DataGridTestsResult.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
                 DataGridTestsResult.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.Black;
+            }
+        }
+
+        // Метод для смены языка
+        private void ApplyLanguage()
+        {
+            if (Properties.Settings.Default.Language == "ru-RU")
+            {
+                GroupInfo.Text = "Информация";
+                TextBoxLogin.PlaceholderText = LanguageStrings.Login;
+                TextBoxPass.PlaceholderText = LanguageStrings.Password;
+                UpdateInformation.Text = "Изменить";
+                GroupAvatar.Text = "Аватар";
+                UpdateAvatar.Text = "Изменить";
+                GroupResult.Text = "Результаты";
+                GroupSettings.Text = "Настройки";
+                LabelLanguage.Text = "Язык";
+                LabelTheme.Text = "Тема";
+                ExitAccaunt.Text = "Выход из аккаунта";
+            }
+            else
+            {
+                GroupInfo.Text = "Information";
+                TextBoxLogin.PlaceholderText = LanguageStrings.Login_US;
+                TextBoxPass.PlaceholderText = LanguageStrings.Password_US;
+                UpdateInformation.Text = "Change";
+                GroupAvatar.Text = "Avatar";
+                UpdateAvatar.Text = "Change";
+                GroupResult.Text = "Results";
+                GroupSettings.Text = "Settings";
+                LabelLanguage.Text = "Language";
+                LabelTheme.Text = "Theme";
+                ExitAccaunt.Text = "Log out of your account";
             }
         }
     }

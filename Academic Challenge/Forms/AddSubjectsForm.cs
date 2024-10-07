@@ -16,7 +16,7 @@ namespace Academic_Challenge
         {
             InitializeComponent();
             this.subjectsForm = subjectsForm; // Сохраняем ссылку на форму со списком предметов
-            TextBoxSubject.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.Subject_US : LanguageStrings.Subject);
+            ApplyLanguage();
             ApplyTheme();
         }
 
@@ -82,6 +82,24 @@ namespace Academic_Challenge
             {
                 AddSubject.FillColor = Color.Black;
                 TextBoxSubject.FocusedState.BorderColor = Color.Black;
+            }
+        }
+
+        // Метод для смены языка
+        private void ApplyLanguage()
+        {
+            if (Properties.Settings.Default.Language == "ru-RU")
+            {
+                TextBoxSubject.PlaceholderText = LanguageStrings.Subject;
+                Subject_Text.Text = "Добавить предмет";
+                AddSubject.Text = "Добавить";
+
+            }
+            else
+            {
+                TextBoxSubject.PlaceholderText = LanguageStrings.Subject_US;
+                Subject_Text.Text = "Add an item";
+                AddSubject.Text = "Add";
             }
         }
     }

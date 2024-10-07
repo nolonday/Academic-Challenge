@@ -2,7 +2,6 @@
 using Guna.UI2.WinForms;
 using System.Collections.Generic;
 using MySql.Data.MySqlClient;
-
 namespace Academic_Challenge
 {
     internal class Methods

@@ -117,138 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="ComboBoxScore.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Kanit Cyrillic, 14pt</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ComboBoxScore.ItemHeight" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="ComboBoxScore.Items" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="ComboBoxScore.Items1" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="ComboBoxScore.Items2" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="ComboBoxScore.Items3" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="ComboBoxScore.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 98</value>
-  </data>
-  <data name="ComboBoxScore.Size" type="System.Drawing.Size, System.Drawing">
-    <value>297, 36</value>
-  </data>
-  <data name="ComboBoxScore.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;ComboBoxScore.Name" xml:space="preserve">
-    <value>ComboBoxScore</value>
-  </data>
-  <data name="&gt;&gt;ComboBoxScore.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;ComboBoxScore.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ComboBoxScore.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="UpdateScore.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Kanit Cyrillic, 13pt</value>
-  </data>
-  <data name="UpdateScore.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 140</value>
-  </data>
-  <data name="UpdateScore.Size" type="System.Drawing.Size, System.Drawing">
-    <value>297, 40</value>
-  </data>
-  <data name="UpdateScore.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="UpdateScore.Text" xml:space="preserve">
-    <value>Изменить</value>
-  </data>
-  <data name="&gt;&gt;UpdateScore.Name" xml:space="preserve">
-    <value>UpdateScore</value>
-  </data>
-  <data name="&gt;&gt;UpdateScore.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;UpdateScore.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;UpdateScore.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Score_Text.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Kanit Cyrillic, 40pt, style=Bold</value>
-  </data>
-  <data name="Score_Text.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 21</value>
-  </data>
-  <data name="Score_Text.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 62</value>
-  </data>
-  <data name="Score_Text.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="Score_Text.Text" xml:space="preserve">
-    <value>Оценка</value>
-  </data>
-  <data name="&gt;&gt;Score_Text.Name" xml:space="preserve">
-    <value>Score_Text</value>
-  </data>
-  <data name="&gt;&gt;Score_Text.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2HtmlLabel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;Score_Text.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Score_Text.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <metadata name="FormSettings.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>330, 200</value>
-  </data>
-  <data name="Logo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="Logo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 80</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Logo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="Logo.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="&gt;&gt;Logo.Name" xml:space="preserve">
-    <value>Logo</value>
-  </data>
-  <data name="&gt;&gt;Logo.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;Logo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Logo.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAAAAAAEAIACrlQAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAEAAAABAAgGAAAAXHKoZgAAAAFv
@@ -891,29 +763,5 @@
         6ysPqWW6hhyH5XYdlDsSlZp1ZSnr/1Mj2JssqcjQjYfR3D3KjVKWspSlLGUpS1nKUpaylKUsZSlLWcpS
         lrKUpSxlKUtZylKWspSlLGUpS1nKUpaylKUsZSlLWcr6163/AVCePq+DgvdRAAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>330, 200</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>330, 200</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Оценка</value>
-  </data>
-  <data name="&gt;&gt;FormSettings.Name" xml:space="preserve">
-    <value>FormSettings</value>
-  </data>
-  <data name="&gt;&gt;FormSettings.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2BorderlessForm, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>UserResultForm</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

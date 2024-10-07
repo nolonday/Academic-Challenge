@@ -15,6 +15,7 @@ namespace Academic_Challenge
             InitializeComponent();
             this.mainAuthForm = mainAuthForm; // Сохраняем ссылку на основную форму
             LoadGrid(); // Загружаем данные в DataGrid при инициализации
+            ApplyLanguage();
             ApplyTheme();
         }
 
@@ -121,6 +122,19 @@ namespace Academic_Challenge
             {
                 DataGridUsers.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
                 DataGridUsers.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.Black;
+            }
+        }
+
+        // Метод для смены языка
+        private void ApplyLanguage()
+        {
+            if (Properties.Settings.Default.Language == "ru-RU")
+            {
+                User_Text.Text = "Пользователи";
+            }
+            else
+            {
+                User_Text.Text = "Users";
             }
         }
     }

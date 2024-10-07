@@ -23,8 +23,7 @@ namespace Academic_Challenge
             TextBoxName.Text = Methods.TestName;
             TextBoxDesc.Text = Methods.TestDesc;
             ComboBoxComplexity.Text = Methods.TestComplexity;
-            TextBoxName.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.NameTest_US : LanguageStrings.NameTest);
-            TextBoxDesc.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.DescriptionTest_US : LanguageStrings.DescriptionTest);
+            ApplyLanguage();
             ApplyTheme();
         }
 
@@ -100,6 +99,26 @@ namespace Academic_Challenge
                 TextBoxName.FocusedState.BorderColor = Color.Black;
                 TextBoxDesc.FocusedState.BorderColor = Color.Black;
                 ComboBoxComplexity.FocusedState.BorderColor = Color.Black;
+            }
+        }
+
+        // Метод для смены языка
+        private void ApplyLanguage()
+        {
+            if (Properties.Settings.Default.Language == "ru-RU")
+            {
+                TextBoxName.PlaceholderText = LanguageStrings.NameTest;
+                TextBoxDesc.PlaceholderText = LanguageStrings.DescriptionTest;
+                Test_Text.Text = "Изменить тест";
+                ChgTest.Text = "Изменить";
+
+            }
+            else
+            {
+                TextBoxName.PlaceholderText = LanguageStrings.NameTest_US;
+                TextBoxDesc.PlaceholderText = LanguageStrings.DescriptionTest_US;
+                Test_Text.Text = "Change the test";
+                ChgTest.Text = "Change";
             }
         }
     }

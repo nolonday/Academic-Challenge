@@ -28,26 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AllQuestionForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.LabelQuestions = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.DataGridQuestions = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Add = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.LabelQuestions = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridQuestions)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Add)).BeginInit();
             this.SuspendLayout();
-            // 
-            // LabelQuestions
-            // 
-            this.LabelQuestions.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.LabelQuestions, "LabelQuestions");
-            this.LabelQuestions.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
-            this.LabelQuestions.IsSelectionEnabled = false;
-            this.LabelQuestions.Name = "LabelQuestions";
-            this.LabelQuestions.Click += new System.EventHandler(this.LabelQuestions_Click);
             // 
             // DataGridQuestions
             // 
@@ -69,7 +59,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DataGridQuestions.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            resources.ApplyResources(this.DataGridQuestions, "DataGridQuestions");
+            this.DataGridQuestions.ColumnHeadersHeight = 50;
             this.DataGridQuestions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
@@ -79,7 +69,9 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DataGridQuestions.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DataGridQuestions.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.DataGridQuestions.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
+            this.DataGridQuestions.Location = new System.Drawing.Point(0, 64);
             this.DataGridQuestions.Name = "DataGridQuestions";
             this.DataGridQuestions.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -92,6 +84,8 @@
             this.DataGridQuestions.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.DataGridQuestions.RowHeadersVisible = false;
             this.DataGridQuestions.RowTemplate.Height = 50;
+            this.DataGridQuestions.Size = new System.Drawing.Size(1200, 625);
+            this.DataGridQuestions.TabIndex = 14;
             this.DataGridQuestions.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.DataGridQuestions.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Kanit Cyrillic", 15F);
             this.DataGridQuestions.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -120,20 +114,40 @@
             this.Add.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Add.Image = global::Academic_Challenge.Properties.Resources.Add;
             this.Add.ImageRotate = 0F;
-            resources.ApplyResources(this.Add, "Add");
+            this.Add.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.Add.Location = new System.Drawing.Point(1147, 8);
             this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(50, 50);
+            this.Add.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Add.TabIndex = 17;
             this.Add.TabStop = false;
             this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
+            // LabelQuestions
+            // 
+            this.LabelQuestions.AutoSize = true;
+            this.LabelQuestions.BackColor = System.Drawing.Color.White;
+            this.LabelQuestions.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LabelQuestions.Font = new System.Drawing.Font("Kanit Cyrillic", 40F, System.Drawing.FontStyle.Bold);
+            this.LabelQuestions.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
+            this.LabelQuestions.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.LabelQuestions.Location = new System.Drawing.Point(3, 0);
+            this.LabelQuestions.Name = "LabelQuestions";
+            this.LabelQuestions.Size = new System.Drawing.Size(283, 61);
+            this.LabelQuestions.TabIndex = 18;
+            this.LabelQuestions.Text = "Вопросы";
+            this.LabelQuestions.Click += new System.EventHandler(this.LabelQuestions_Click);
+            // 
             // AllQuestionForm
             // 
-            resources.ApplyResources(this, "$this");
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.LabelQuestions);
             this.Controls.Add(this.Add);
             this.Controls.Add(this.DataGridQuestions);
-            this.Controls.Add(this.LabelQuestions);
             this.Name = "AllQuestionForm";
+            this.Size = new System.Drawing.Size(1200, 689);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridQuestions)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Add)).EndInit();
             this.ResumeLayout(false);
@@ -142,9 +156,8 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2HtmlLabel LabelQuestions;
         private Guna.UI2.WinForms.Guna2DataGridView DataGridQuestions;
         private Guna.UI2.WinForms.Guna2PictureBox Add;
+        private System.Windows.Forms.Label LabelQuestions;
     }
 }

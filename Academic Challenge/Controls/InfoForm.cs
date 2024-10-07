@@ -12,6 +12,7 @@ namespace Academic_Challenge
         public InfoForm()
         {
             InitializeComponent();
+            ApplyLanguage();
             ApplyTheme(); // Применить тему
         }
 
@@ -97,6 +98,43 @@ namespace Academic_Challenge
                 GroupSocial.CustomBorderColor = Color.Black;
                 Open.FillColor = Color.Black;
                 App.ForeColor = Color.Black;
+            }
+        }
+
+        // Метод для смены языка
+        private void ApplyLanguage()
+        {
+            if (Properties.Settings.Default.Language == "ru-RU")
+            {
+                GroupApp.Text = "Приложение";
+                Desc.Text = "Это интерактивное приложение для подготовки к тестам. Оно предлагает пользователям широкий спектр тестов \r\n" +
+                    "по различным предметам, помогает улучшить знания и уверенность перед важными испытаниями.";
+                GroupAuditoria.Text = "Аудитория";
+                LabelAuditoria.Text = "Целевая аудитория";
+                Desk_audotiria.Text = "Студенты, школьники и все, кто хочет улучшить свои \r\nзнания.\r\n";
+                GroupSupport.Text = "Поддержка";
+                LabelUser.Text = "Поддержка пользователей";
+                Support.Text = "Для технической поддержки обращайтесь на \r\n[support@academicchallenge.com]";
+                GroupVersion.Text = "Версия Приложения";
+                LabelVersion.Text = "Версия";
+                Open.Text = "Проверить Обновления";
+                GroupSocial.Text = "Социальные сети";
+            }
+            else
+            {
+                GroupApp.Text = "Application";
+                Desc.Text = "This is an interactive application for test preparation. It offers users a wide range of tests \r\n" +
+                    "across various subjects, helping to improve knowledge and confidence before important exams.";
+                GroupAuditoria.Text = "Audience";
+                LabelAuditoria.Text = "Target Audience";
+                Desk_audotiria.Text = "Students, schoolchildren, and anyone looking to enhance their \r\nknowledge.\r\n";
+                GroupSupport.Text = "Support";
+                LabelUser.Text = "User Support";
+                Support.Text = "For technical support, please contact \r\n[support@academicchallenge.com]";
+                GroupVersion.Text = "Application Version";
+                LabelVersion.Text = "Version";
+                Open.Text = "Check for Updates";
+                GroupSocial.Text = "Social Media";
             }
         }
     }

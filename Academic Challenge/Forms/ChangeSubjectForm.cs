@@ -21,7 +21,7 @@ namespace Academic_Challenge
             // Получение названия предмета и заполнение текстового поля
             methods.SubjectNameResult(subject_id);
             TextBoxSubject.Text = Methods.SubjectName;
-            TextBoxSubject.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.Subject_US : LanguageStrings.Subject);
+            ApplyLanguage();
             ApplyTheme();
         }
 
@@ -87,6 +87,24 @@ namespace Academic_Challenge
             {
                 ChgSubject.FillColor = Color.Black;
                 TextBoxSubject.FocusedState.BorderColor = Color.Black;
+            }
+        }
+
+        // Метод для смены языка
+        private void ApplyLanguage()
+        {
+            if (Properties.Settings.Default.Language == "ru-RU")
+            {
+                TextBoxSubject.PlaceholderText = LanguageStrings.Subject;
+                Subject_Text.Text = "Изменить предмет";
+                ChgSubject.Text = "Изменить";
+
+            }
+            else
+            {
+                TextBoxSubject.PlaceholderText = LanguageStrings.Subject_US;
+                Subject_Text.Text = "Change the subject";
+                ChgSubject.Text = "Change";
             }
         }
     }

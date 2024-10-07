@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InformationUserForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -58,10 +57,14 @@
             // Question_Text
             // 
             this.Question_Text.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.Question_Text, "Question_Text");
+            this.Question_Text.Font = new System.Drawing.Font("Kanit Cyrillic", 40F, System.Drawing.FontStyle.Bold);
             this.Question_Text.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
             this.Question_Text.IsSelectionEnabled = false;
+            this.Question_Text.Location = new System.Drawing.Point(14, 3);
             this.Question_Text.Name = "Question_Text";
+            this.Question_Text.Size = new System.Drawing.Size(843, 62);
+            this.Question_Text.TabIndex = 16;
+            this.Question_Text.Text = "Информация о пользователе";
             // 
             // ComboBoxRole
             // 
@@ -73,22 +76,30 @@
             this.ComboBoxRole.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
             this.ComboBoxRole.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(8)))), ((int)(((byte)(91)))));
             this.ComboBoxRole.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(8)))), ((int)(((byte)(91)))));
-            resources.ApplyResources(this.ComboBoxRole, "ComboBoxRole");
+            this.ComboBoxRole.Font = new System.Drawing.Font("Kanit Cyrillic", 14F);
             this.ComboBoxRole.ForeColor = System.Drawing.Color.Black;
             this.ComboBoxRole.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
+            this.ComboBoxRole.ItemHeight = 30;
             this.ComboBoxRole.Items.AddRange(new object[] {
-            resources.GetString("ComboBoxRole.Items"),
-            resources.GetString("ComboBoxRole.Items1")});
+            "Админ",
+            "Пользователь"});
+            this.ComboBoxRole.Location = new System.Drawing.Point(19, 264);
             this.ComboBoxRole.Name = "ComboBoxRole";
+            this.ComboBoxRole.Size = new System.Drawing.Size(266, 36);
+            this.ComboBoxRole.TabIndex = 24;
             // 
             // GroupResult
             // 
             this.GroupResult.Controls.Add(this.DataGridResultUsers);
             this.GroupResult.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(8)))), ((int)(((byte)(91)))));
             this.GroupResult.FillColor = System.Drawing.Color.WhiteSmoke;
-            resources.ApplyResources(this.GroupResult, "GroupResult");
+            this.GroupResult.Font = new System.Drawing.Font("Kanit Cyrillic", 15F, System.Drawing.FontStyle.Bold);
             this.GroupResult.ForeColor = System.Drawing.Color.White;
+            this.GroupResult.Location = new System.Drawing.Point(13, 425);
             this.GroupResult.Name = "GroupResult";
+            this.GroupResult.Size = new System.Drawing.Size(1173, 256);
+            this.GroupResult.TabIndex = 29;
+            this.GroupResult.Text = "Результаты";
             this.GroupResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // DataGridResultUsers
@@ -111,7 +122,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DataGridResultUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            resources.ApplyResources(this.DataGridResultUsers, "DataGridResultUsers");
+            this.DataGridResultUsers.ColumnHeadersHeight = 25;
             this.DataGridResultUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
@@ -121,7 +132,9 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DataGridResultUsers.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DataGridResultUsers.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.DataGridResultUsers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
+            this.DataGridResultUsers.Location = new System.Drawing.Point(0, 64);
             this.DataGridResultUsers.Name = "DataGridResultUsers";
             this.DataGridResultUsers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -134,6 +147,8 @@
             this.DataGridResultUsers.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.DataGridResultUsers.RowHeadersVisible = false;
             this.DataGridResultUsers.RowTemplate.Height = 35;
+            this.DataGridResultUsers.Size = new System.Drawing.Size(1173, 192);
+            this.DataGridResultUsers.TabIndex = 13;
             this.DataGridResultUsers.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.DataGridResultUsers.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Kanit Cyrillic", 15F);
             this.DataGridResultUsers.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -167,9 +182,13 @@
             this.GroupInfo.Controls.Add(this.ComboBoxRole);
             this.GroupInfo.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(8)))), ((int)(((byte)(91)))));
             this.GroupInfo.FillColor = System.Drawing.Color.WhiteSmoke;
-            resources.ApplyResources(this.GroupInfo, "GroupInfo");
+            this.GroupInfo.Font = new System.Drawing.Font("Kanit Cyrillic", 15F, System.Drawing.FontStyle.Bold);
             this.GroupInfo.ForeColor = System.Drawing.Color.White;
+            this.GroupInfo.Location = new System.Drawing.Point(13, 71);
             this.GroupInfo.Name = "GroupInfo";
+            this.GroupInfo.Size = new System.Drawing.Size(300, 363);
+            this.GroupInfo.TabIndex = 28;
+            this.GroupInfo.Text = "Информация";
             this.GroupInfo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TextBoxTests
@@ -181,14 +200,18 @@
             this.TextBoxTests.DefaultText = "";
             this.TextBoxTests.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
             this.TextBoxTests.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(8)))), ((int)(((byte)(91)))));
-            resources.ApplyResources(this.TextBoxTests, "TextBoxTests");
+            this.TextBoxTests.Font = new System.Drawing.Font("Kanit Cyrillic", 14F);
             this.TextBoxTests.ForeColor = System.Drawing.Color.Black;
             this.TextBoxTests.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
+            this.TextBoxTests.Location = new System.Drawing.Point(19, 209);
+            this.TextBoxTests.Margin = new System.Windows.Forms.Padding(2);
             this.TextBoxTests.Name = "TextBoxTests";
             this.TextBoxTests.PasswordChar = '\0';
             this.TextBoxTests.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
             this.TextBoxTests.PlaceholderText = "Number of tests";
             this.TextBoxTests.SelectedText = "";
+            this.TextBoxTests.Size = new System.Drawing.Size(266, 50);
+            this.TextBoxTests.TabIndex = 17;
             // 
             // UpdateInformation
             // 
@@ -199,9 +222,13 @@
             this.UpdateInformation.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.UpdateInformation.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.UpdateInformation.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(8)))), ((int)(((byte)(91)))));
-            resources.ApplyResources(this.UpdateInformation, "UpdateInformation");
+            this.UpdateInformation.Font = new System.Drawing.Font("Kanit Cyrillic", 13F);
             this.UpdateInformation.ForeColor = System.Drawing.Color.White;
+            this.UpdateInformation.Location = new System.Drawing.Point(19, 306);
             this.UpdateInformation.Name = "UpdateInformation";
+            this.UpdateInformation.Size = new System.Drawing.Size(266, 40);
+            this.UpdateInformation.TabIndex = 16;
+            this.UpdateInformation.Text = "Изменить";
             this.UpdateInformation.Click += new System.EventHandler(this.UpdateInformation_Click);
             // 
             // TextBoxEmail
@@ -213,14 +240,18 @@
             this.TextBoxEmail.DefaultText = "";
             this.TextBoxEmail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
             this.TextBoxEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(8)))), ((int)(((byte)(91)))));
-            resources.ApplyResources(this.TextBoxEmail, "TextBoxEmail");
+            this.TextBoxEmail.Font = new System.Drawing.Font("Kanit Cyrillic", 14F);
             this.TextBoxEmail.ForeColor = System.Drawing.Color.Black;
             this.TextBoxEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
+            this.TextBoxEmail.Location = new System.Drawing.Point(19, 47);
+            this.TextBoxEmail.Margin = new System.Windows.Forms.Padding(2);
             this.TextBoxEmail.Name = "TextBoxEmail";
             this.TextBoxEmail.PasswordChar = '\0';
             this.TextBoxEmail.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
             this.TextBoxEmail.PlaceholderText = "Email";
             this.TextBoxEmail.SelectedText = "";
+            this.TextBoxEmail.Size = new System.Drawing.Size(266, 50);
+            this.TextBoxEmail.TabIndex = 15;
             // 
             // TextBoxPass
             // 
@@ -231,14 +262,18 @@
             this.TextBoxPass.DefaultText = "";
             this.TextBoxPass.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
             this.TextBoxPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(8)))), ((int)(((byte)(91)))));
-            resources.ApplyResources(this.TextBoxPass, "TextBoxPass");
+            this.TextBoxPass.Font = new System.Drawing.Font("Kanit Cyrillic", 14F);
             this.TextBoxPass.ForeColor = System.Drawing.Color.Black;
             this.TextBoxPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
+            this.TextBoxPass.Location = new System.Drawing.Point(19, 155);
+            this.TextBoxPass.Margin = new System.Windows.Forms.Padding(2);
             this.TextBoxPass.Name = "TextBoxPass";
             this.TextBoxPass.PasswordChar = '\0';
             this.TextBoxPass.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
             this.TextBoxPass.PlaceholderText = "Password";
             this.TextBoxPass.SelectedText = "";
+            this.TextBoxPass.Size = new System.Drawing.Size(266, 50);
+            this.TextBoxPass.TabIndex = 14;
             // 
             // TextBoxLogin
             // 
@@ -249,14 +284,18 @@
             this.TextBoxLogin.DefaultText = "";
             this.TextBoxLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
             this.TextBoxLogin.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(8)))), ((int)(((byte)(91)))));
-            resources.ApplyResources(this.TextBoxLogin, "TextBoxLogin");
+            this.TextBoxLogin.Font = new System.Drawing.Font("Kanit Cyrillic", 14F);
             this.TextBoxLogin.ForeColor = System.Drawing.Color.Black;
             this.TextBoxLogin.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
+            this.TextBoxLogin.Location = new System.Drawing.Point(19, 101);
+            this.TextBoxLogin.Margin = new System.Windows.Forms.Padding(2);
             this.TextBoxLogin.Name = "TextBoxLogin";
             this.TextBoxLogin.PasswordChar = '\0';
             this.TextBoxLogin.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
             this.TextBoxLogin.PlaceholderText = "Login";
             this.TextBoxLogin.SelectedText = "";
+            this.TextBoxLogin.Size = new System.Drawing.Size(266, 50);
+            this.TextBoxLogin.TabIndex = 13;
             // 
             // GroupAvatar
             // 
@@ -264,9 +303,13 @@
             this.GroupAvatar.Controls.Add(this.PictureAvatar);
             this.GroupAvatar.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(8)))), ((int)(((byte)(91)))));
             this.GroupAvatar.FillColor = System.Drawing.Color.WhiteSmoke;
-            resources.ApplyResources(this.GroupAvatar, "GroupAvatar");
+            this.GroupAvatar.Font = new System.Drawing.Font("Kanit Cyrillic", 15F, System.Drawing.FontStyle.Bold);
             this.GroupAvatar.ForeColor = System.Drawing.Color.White;
+            this.GroupAvatar.Location = new System.Drawing.Point(324, 71);
             this.GroupAvatar.Name = "GroupAvatar";
+            this.GroupAvatar.Size = new System.Drawing.Size(300, 346);
+            this.GroupAvatar.TabIndex = 27;
+            this.GroupAvatar.Text = "Аватар";
             this.GroupAvatar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // UpdateAvatar
@@ -278,9 +321,13 @@
             this.UpdateAvatar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.UpdateAvatar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.UpdateAvatar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(8)))), ((int)(((byte)(91)))));
-            resources.ApplyResources(this.UpdateAvatar, "UpdateAvatar");
+            this.UpdateAvatar.Font = new System.Drawing.Font("Kanit Cyrillic", 13F);
             this.UpdateAvatar.ForeColor = System.Drawing.Color.White;
+            this.UpdateAvatar.Location = new System.Drawing.Point(74, 303);
             this.UpdateAvatar.Name = "UpdateAvatar";
+            this.UpdateAvatar.Size = new System.Drawing.Size(159, 40);
+            this.UpdateAvatar.TabIndex = 9;
+            this.UpdateAvatar.Text = "Изменить";
             this.UpdateAvatar.Click += new System.EventHandler(this.UpdateAvatar_Click);
             // 
             // PictureAvatar
@@ -288,8 +335,11 @@
             this.PictureAvatar.BackColor = System.Drawing.Color.White;
             this.PictureAvatar.Image = global::Academic_Challenge.Properties.Resources.profile;
             this.PictureAvatar.ImageRotate = 0F;
-            resources.ApplyResources(this.PictureAvatar, "PictureAvatar");
+            this.PictureAvatar.Location = new System.Drawing.Point(61, 62);
             this.PictureAvatar.Name = "PictureAvatar";
+            this.PictureAvatar.Size = new System.Drawing.Size(193, 212);
+            this.PictureAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureAvatar.TabIndex = 22;
             this.PictureAvatar.TabStop = false;
             // 
             // PictureBoxInfo
@@ -298,13 +348,16 @@
             this.PictureBoxInfo.FillColor = System.Drawing.Color.DarkGray;
             this.PictureBoxInfo.Image = global::Academic_Challenge.Properties.Resources.userinfo;
             this.PictureBoxInfo.ImageRotate = 0F;
-            resources.ApplyResources(this.PictureBoxInfo, "PictureBoxInfo");
+            this.PictureBoxInfo.Location = new System.Drawing.Point(630, 71);
             this.PictureBoxInfo.Name = "PictureBoxInfo";
+            this.PictureBoxInfo.Size = new System.Drawing.Size(556, 346);
+            this.PictureBoxInfo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBoxInfo.TabIndex = 30;
             this.PictureBoxInfo.TabStop = false;
             // 
             // InformationUserForm
             // 
-            resources.ApplyResources(this, "$this");
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.PictureBoxInfo);
@@ -313,6 +366,7 @@
             this.Controls.Add(this.GroupAvatar);
             this.Controls.Add(this.Question_Text);
             this.Name = "InformationUserForm";
+            this.Size = new System.Drawing.Size(1200, 689);
             this.GroupResult.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridResultUsers)).EndInit();
             this.GroupInfo.ResumeLayout(false);

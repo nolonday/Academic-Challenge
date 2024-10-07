@@ -13,11 +13,8 @@ namespace Academic_Challenge.Forms
         {
             InitializeComponent();
             TextBoxPass.Visible = false; // Скрыть поле ввода пароля при инициализации
+            ApplyLanguage();
             ApplyTheme(); // Применить тему
-            // Установка текста подсказки для полей ввода в зависимости от языка
-            TextBoxLogin.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.Login_US : LanguageStrings.Login);
-            TextBoxCode.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.Code_US : LanguageStrings.Code);
-            TextBoxPass.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.Password_US : LanguageStrings.Password);
         }
 
         // Обработчик события клика по логотипу
@@ -109,6 +106,27 @@ namespace Academic_Challenge.Forms
                 TextBoxCode.FocusedState.BorderColor = Color.Black;
                 TextBoxPass.FocusedState.BorderColor = Color.Black;
                 ButtonRecover.FillColor = Color.Black;
+            }
+        }
+
+        // Метод для смены языка
+        private void ApplyLanguage()
+        {
+            if (Properties.Settings.Default.Language == "ru-RU")
+            {
+                TextBoxLogin.PlaceholderText = LanguageStrings.Login;
+                TextBoxCode.PlaceholderText = LanguageStrings.Code;
+                TextBoxPass.PlaceholderText = LanguageStrings.Password;
+                Recover_Text.Text = "Восстановление";
+                ButtonRecover.Text = "Востановить";
+            }
+            else
+            {
+                TextBoxLogin.PlaceholderText = LanguageStrings.Login_US;
+                TextBoxCode.PlaceholderText = LanguageStrings.Code_US;
+                TextBoxPass.PlaceholderText = LanguageStrings.Password_US;
+                Recover_Text.Text = "Recovery";
+                ButtonRecover.Text = "Restore";
             }
         }
     }

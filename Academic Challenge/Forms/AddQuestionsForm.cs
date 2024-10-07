@@ -21,12 +21,7 @@ namespace Academic_Challenge.Forms
             this.id = id; // Сохраняем идентификатор теста
             this.mainAuthForm = mainAuthForm;
             allQuestionForm = new AllQuestionForm(id, mainAuthForm,subject_id); // Инициализируем форму со всеми вопросами
-            // Устанавливаем текст подсказки для полей ввода на основе языка
-            TextBoxName.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.Question_US : LanguageStrings.Question);
-            TextBoxA.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.AnswerA_US : LanguageStrings.AnswerA);
-            TextBoxB.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.AnswerB_US : LanguageStrings.AnswerB);
-            TextBoxC.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.AnswerC_US : LanguageStrings.AnswerC);
-            TextBoxD.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.AnswerD_US : LanguageStrings.AnswerD);
+            ApplyLanguage();
             ApplyTheme(); // Применяем тему
         }
 
@@ -99,6 +94,32 @@ namespace Academic_Challenge.Forms
                 TextBoxC.FocusedState.BorderColor = Color.Black;
                 TextBoxD.FocusedState.BorderColor = Color.Black;
                 ComboBoxAnswer.FocusedState.BorderColor = Color.Black;
+            }
+        }
+
+        // Метод для смены языка
+        private void ApplyLanguage()
+        {
+            if (Properties.Settings.Default.Language == "ru-RU")
+            {
+                TextBoxName.PlaceholderText = LanguageStrings.AnswerA;
+                TextBoxA.PlaceholderText = LanguageStrings.AnswerA;
+                TextBoxB.PlaceholderText = LanguageStrings.AnswerB;
+                TextBoxC.PlaceholderText = LanguageStrings.AnswerC;
+                TextBoxD.PlaceholderText = LanguageStrings.AnswerD;
+                Test_Text.Text = "Добавить вопрос";
+                AddQuestion.Text = "Добавить";
+
+            }
+            else
+            {
+                TextBoxName.PlaceholderText = LanguageStrings.AnswerA_US;
+                TextBoxA.PlaceholderText = LanguageStrings.AnswerA_US;
+                TextBoxB.PlaceholderText = LanguageStrings.AnswerB_US;
+                TextBoxC.PlaceholderText = LanguageStrings.AnswerC_US;
+                TextBoxD.PlaceholderText = LanguageStrings.AnswerD_US;
+                Test_Text.Text = "Add a question";
+                AddQuestion.Text = "Add";
             }
         }
     }

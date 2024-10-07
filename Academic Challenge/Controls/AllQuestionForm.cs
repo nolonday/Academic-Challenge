@@ -20,6 +20,7 @@ namespace Academic_Challenge.Controls
             this.subject_id = subject_id;
             this.mainAuthForm = mainAuthForm;
             LoadGrid(test_id); // Загружаем данные в таблицу
+            ApplyLanguage();
             ApplyTheme(); // Применяем тему
         }
 
@@ -147,6 +148,18 @@ namespace Academic_Challenge.Controls
         private void LabelQuestions_Click(object sender, EventArgs e)
         {
             mainAuthForm.LoadTests(subject_id); // Загружаем тесты
+        }
+        // Метод для смены языка
+        private void ApplyLanguage()
+        {
+            if (Properties.Settings.Default.Language == "ru-RU")
+            {
+                LabelQuestions.Text = "Вопросы";
+            }
+            else
+            {
+                LabelQuestions.Text = "Questions";
+            }
         }
     }
 }

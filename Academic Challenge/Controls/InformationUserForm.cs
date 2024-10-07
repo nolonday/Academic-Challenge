@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySqlX.XDevAPI.Common;
+using System;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
@@ -41,9 +42,7 @@ namespace Academic_Challenge
 
             TextBoxTests.Text = Methods.CompletedTests_User.ToString(); // Заполняем количество завершенных тестов
             LoadGrid(id); // Загружаем данные в DataGrid
-            TextBoxLogin.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.Login_US : LanguageStrings.Login);
-            TextBoxPass.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.Password_US : LanguageStrings.Password);
-            TextBoxTests.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.NumberTest_US : LanguageStrings.NumberTest);
+            ApplyLanguage();
             ApplyTheme();
         }
 
@@ -263,6 +262,35 @@ namespace Academic_Challenge
                 GroupResult.CustomBorderColor = Color.Black;
                 DataGridResultUsers.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
                 DataGridResultUsers.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.Black;
+            }
+        }
+
+        // Метод для смены языка
+        private void ApplyLanguage()
+        {
+            if (Properties.Settings.Default.Language == "ru-RU")
+            {
+                Question_Text.Text = "Информация о пользователе";
+                GroupInfo.Text = "Информация";
+                TextBoxLogin.PlaceholderText = LanguageStrings.Login;
+                TextBoxPass.PlaceholderText = LanguageStrings.Password;
+                TextBoxTests.PlaceholderText = LanguageStrings.NumberTest;
+                UpdateInformation.Text = "Изменить";
+                GroupAvatar.Text = "Аватар";
+                UpdateAvatar.Text = "Изменить";
+                GroupResult.Text = "Результаты";
+            }
+            else
+            {
+                Question_Text.Text = "User Information";
+                GroupInfo.Text = "Information";
+                TextBoxLogin.PlaceholderText = LanguageStrings.Login_US;
+                TextBoxPass.PlaceholderText = LanguageStrings.Password_US;
+                TextBoxTests.PlaceholderText = LanguageStrings.NumberTest_US;
+                UpdateInformation.Text = "Change";
+                GroupAvatar.Text = "Avatar";
+                UpdateAvatar.Text = "Change";
+                GroupResult.Text = "Results";
             }
         }
     }

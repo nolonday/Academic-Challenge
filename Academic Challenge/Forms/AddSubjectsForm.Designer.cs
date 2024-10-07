@@ -41,10 +41,14 @@
             // Subject_Text
             // 
             this.Subject_Text.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.Subject_Text, "Subject_Text");
+            this.Subject_Text.Font = new System.Drawing.Font("Kanit Cyrillic", 40F, System.Drawing.FontStyle.Bold);
             this.Subject_Text.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
             this.Subject_Text.IsSelectionEnabled = false;
+            this.Subject_Text.Location = new System.Drawing.Point(98, 12);
             this.Subject_Text.Name = "Subject_Text";
+            this.Subject_Text.Size = new System.Drawing.Size(534, 62);
+            this.Subject_Text.TabIndex = 14;
+            this.Subject_Text.Text = "Добавить предмет";
             this.Subject_Text.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Subject_Text_MouseDown);
             // 
             // AddSubject
@@ -56,9 +60,15 @@
             this.AddSubject.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.AddSubject.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.AddSubject.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(8)))), ((int)(((byte)(91)))));
-            resources.ApplyResources(this.AddSubject, "AddSubject");
+            this.AddSubject.Font = new System.Drawing.Font("Kanit Cyrillic", 13F);
             this.AddSubject.ForeColor = System.Drawing.Color.White;
+            this.AddSubject.Location = new System.Drawing.Point(16, 146);
+            this.AddSubject.MaximumSize = new System.Drawing.Size(616, 40);
+            this.AddSubject.MinimumSize = new System.Drawing.Size(616, 40);
             this.AddSubject.Name = "AddSubject";
+            this.AddSubject.Size = new System.Drawing.Size(616, 40);
+            this.AddSubject.TabIndex = 27;
+            this.AddSubject.Text = "Добавить";
             this.AddSubject.Click += new System.EventHandler(this.AddSubject_Click);
             // 
             // FormSettings
@@ -79,36 +89,49 @@
             this.TextBoxSubject.DefaultText = "";
             this.TextBoxSubject.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
             this.TextBoxSubject.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(8)))), ((int)(((byte)(91)))));
-            resources.ApplyResources(this.TextBoxSubject, "TextBoxSubject");
+            this.TextBoxSubject.Font = new System.Drawing.Font("Kanit Cyrillic", 18F);
             this.TextBoxSubject.ForeColor = System.Drawing.Color.Black;
             this.TextBoxSubject.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(126)))));
+            this.TextBoxSubject.Location = new System.Drawing.Point(16, 91);
+            this.TextBoxSubject.Margin = new System.Windows.Forms.Padding(2);
             this.TextBoxSubject.Name = "TextBoxSubject";
             this.TextBoxSubject.PasswordChar = '\0';
             this.TextBoxSubject.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
             this.TextBoxSubject.PlaceholderText = "Item";
             this.TextBoxSubject.SelectedText = "";
+            this.TextBoxSubject.Size = new System.Drawing.Size(616, 50);
+            this.TextBoxSubject.TabIndex = 28;
             // 
             // Logo
             // 
             this.Logo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Logo.Image = global::Academic_Challenge.Properties.Resources.logo;
             this.Logo.ImageRotate = 0F;
-            resources.ApplyResources(this.Logo, "Logo");
+            this.Logo.Location = new System.Drawing.Point(12, 6);
             this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(80, 80);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Logo.TabIndex = 29;
             this.Logo.TabStop = false;
             this.Logo.DoubleClick += new System.EventHandler(this.Logo_DoubleClick);
             // 
             // AddSubjectsForm
             // 
-            resources.ApplyResources(this, "$this");
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(650, 200);
             this.Controls.Add(this.Logo);
             this.Controls.Add(this.TextBoxSubject);
             this.Controls.Add(this.AddSubject);
             this.Controls.Add(this.Subject_Text);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(650, 200);
+            this.MinimumSize = new System.Drawing.Size(650, 200);
             this.Name = "AddSubjectsForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Добавить Предмет";
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

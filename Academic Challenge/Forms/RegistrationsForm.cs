@@ -15,10 +15,8 @@ namespace Academic_Challenge
         public RegistrationsForm()
         {
             InitializeComponent(); // Инициализация компонентов формы
-            ApplyTheme();
-            TextBoxLogin.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.Login_US : LanguageStrings.Login);
-            TextBoxCode.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.Code_US : LanguageStrings.Code);
-            TextBoxPass.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.Password_US : LanguageStrings.Password);
+            ApplyLanguage();
+            ApplyTheme();           
         }
 
         // Метод для перехода на форму авторизации
@@ -29,10 +27,12 @@ namespace Academic_Challenge
             this.Close(); // Закрытие текущей формы
         }
 
-        // Метод для выхода из приложения
+        // Метод для перехода форму авторизации
         private void Logo_Click(object sender, EventArgs e)
         {
-            Application.Exit(); // Закрытие приложения
+            AuthorizationForm authorization = new AuthorizationForm();
+            authorization.Show();
+            this.Close();
         }
 
         // Конвертация изображения в массив байтов
@@ -169,6 +169,31 @@ namespace Academic_Challenge
                 TextBoxPass.FocusedState.BorderColor = Color.Black;
                 ButtonRegistration.FillColor = Color.Black;
                 Open.FillColor = Color.Black;
+            }
+        }
+
+        // Метод для смены языка
+        private void ApplyLanguage()
+        {
+            if (Properties.Settings.Default.Language == "ru-RU")
+            {
+                TextBoxLogin.PlaceholderText = LanguageStrings.Login;
+                TextBoxCode.PlaceholderText = LanguageStrings.Code;
+                TextBoxPass.PlaceholderText = LanguageStrings.Password;
+                Reg_Text.Text = "Регистрация";
+                Open.Text = "Обзор";
+                ButtonRegistration.Text = "Регистрация";
+                AutificationForm.Text = "Авторизация";
+            }
+            else
+            {
+                TextBoxLogin.PlaceholderText = LanguageStrings.Login;
+                TextBoxCode.PlaceholderText = LanguageStrings.Code;
+                TextBoxPass.PlaceholderText = LanguageStrings.Password;
+                Reg_Text.Text = "Registration";
+                Open.Text = "Overview";
+                ButtonRegistration.Text = "Registration";
+                AutificationForm.Text = "Authorization";
             }
         }
     }

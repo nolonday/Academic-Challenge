@@ -269,71 +269,26 @@
     <Compile Include="Controls\UsersForm.Designer.cs">
       <DependentUpon>UsersForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Controls\AllQuestionForm.en-US.resx">
-      <DependentUpon>AllQuestionForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Controls\AllQuestionForm.resx">
       <DependentUpon>AllQuestionForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\InfoForm.en-US.resx">
-      <DependentUpon>InfoForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\InformationUserForm.en-US.resx">
-      <DependentUpon>InformationUserForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ProfileForm.en-US.resx">
-      <DependentUpon>ProfileForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\SubjectsForm.en-US.resx">
-      <DependentUpon>SubjectsForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\TestsForm.en-US.resx">
-      <DependentUpon>TestsForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\TopUserForm.en-US.resx">
-      <DependentUpon>TopUserForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\UsersForm.en-US.resx">
-      <DependentUpon>UsersForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AddQuestionsForm.en-US.resx">
-      <DependentUpon>AddQuestionsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddQuestionsForm.resx">
       <DependentUpon>AddQuestionsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AddSubjectsForm.en-US.resx">
-      <DependentUpon>AddSubjectsForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddSubjectsForm.resx">
       <DependentUpon>AddSubjectsForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AddTestsForm.en-US.resx">
-      <DependentUpon>AddTestsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddTestsForm.resx">
       <DependentUpon>AddTestsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AuthorizationForm.en-US.resx">
-      <DependentUpon>AuthorizationForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AuthorizationForm.resx">
       <DependentUpon>AuthorizationForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ChangeQuestionForm.en-US.resx">
-      <DependentUpon>ChangeQuestionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ChangeQuestionForm.resx">
       <DependentUpon>ChangeQuestionForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ChangeSubjectForm.en-US.resx">
-      <DependentUpon>ChangeSubjectForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\ChangeSubjectForm.resx">
       <DependentUpon>ChangeSubjectForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ChangeTestForm.en-US.resx">
-      <DependentUpon>ChangeTestForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ChangeTestForm.resx">
       <DependentUpon>ChangeTestForm.cs</DependentUpon>
@@ -344,14 +299,8 @@
     <EmbeddedResource Include="Controls\InformationUserForm.resx">
       <DependentUpon>InformationUserForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MainAuthForm.en-US.resx">
-      <DependentUpon>MainAuthForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainAuthForm.resx">
       <DependentUpon>MainAuthForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MainForm.en-US.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -359,17 +308,8 @@
     <EmbeddedResource Include="Controls\ProfileForm.resx">
       <DependentUpon>ProfileForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\RecoverUserForm.en-US.resx">
-      <DependentUpon>RecoverUserForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\RecoverUserForm.resx">
       <DependentUpon>RecoverUserForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\RegistrationsForm.en-US.resx">
-      <DependentUpon>RegistrationsForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UserResultForm.en-US.resx">
-      <DependentUpon>UserResultForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LanguageStrings.resx">
       <Generator>ResXFileCodeGenerator</Generator>

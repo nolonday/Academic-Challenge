@@ -28,27 +28,8 @@ D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challeng
 D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.ChangeTestForm.resources
 D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.Forms.AddQuestionsForm.resources
 D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.Forms.RecoverUserForm.resources
-D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\en-US\Academic Challenge.resources.dll
-D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.MainForm.en-US.resources
-D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\en-US\Academic Challenge.resources.dll
-D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.ProfileForm.en-US.resources
-D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.UsersForm.en-US.resources
-D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.SubjectsForm.en-US.resources
-D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.TestsForm.en-US.resources
-D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.TopUserForm.en-US.resources
-D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.InformationUserForm.en-US.resources
-D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.InfoForm.en-US.resources
-D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.Forms.AddQuestionsForm.en-US.resources
-D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.AddSubjectsForm.en-US.resources
-D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.AddTestsForm.en-US.resources
-D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.ChangeSubjectForm.en-US.resources
-D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.ChangeTestForm.en-US.resources
-D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.UserResultForm.en-US.resources
-D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.MainAuthForm.en-US.resources
 D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.Controls.AllQuestionForm.resources
 D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.Forms.ChangeQuestionForm.resources
-D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.Forms.ChangeQuestionForm.en-US.resources
-D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.Controls.AllQuestionForm.en-US.resources
 D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.LanguageStrings.resources
 D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\BouncyCastle.Cryptography.dll
 D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\Google.Protobuf.dll
@@ -82,9 +63,6 @@ D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.Memory.xml
 D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.Numerics.Vectors.xml
 D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.Threading.Tasks.Extensions.xml
-D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.Forms.RecoverUserForm.en-US.resources
-D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.RegistrationsForm.en-US.resources
-D:\Git-Project\Academic Challenge\Academic Challenge\obj\Debug\Academic_Challenge.AuthorizationForm.en-US.resources
 D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\Microsoft.Extensions.Primitives.dll
 D:\Git-Project\Academic Challenge\Academic Challenge\bin\Debug\System.Text.Encodings.Web.dll

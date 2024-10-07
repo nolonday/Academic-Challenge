@@ -17,8 +17,7 @@ namespace Academic_Challenge
             InitializeComponent();
             this.subject_id = subject_id; // Сохраняем ID предмета
             this.testsForm = testsForm; // Сохраняем ссылку на форму со списком тестов
-            TextBoxName.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.NameTest_US : LanguageStrings.NameTest);
-            TextBoxDesc.PlaceholderText = (Properties.Settings.Default.Language == "en-US" ? LanguageStrings.DescriptionTest_US : LanguageStrings.DescriptionTest);
+            ApplyLanguage();
             ApplyTheme();
         }
 
@@ -93,6 +92,26 @@ namespace Academic_Challenge
                 TextBoxName.FocusedState.BorderColor = Color.Black;
                 TextBoxDesc.FocusedState.BorderColor = Color.Black;
                 ComboBoxComplexity.FocusedState.BorderColor = Color.Black;
+            }
+        }
+
+        // Метод для смены языка
+        private void ApplyLanguage()
+        {
+            if (Properties.Settings.Default.Language == "ru-RU")
+            {
+                TextBoxName.PlaceholderText = LanguageStrings.NameTest;
+                TextBoxDesc.PlaceholderText = LanguageStrings.DescriptionTest;
+                Test_Text.Text = "Добавить тест";
+                AddTest.Text = "Добавить";
+
+            }
+            else
+            {
+                TextBoxName.PlaceholderText = LanguageStrings.NameTest_US;
+                TextBoxDesc.PlaceholderText = LanguageStrings.DescriptionTest_US;
+                Test_Text.Text = "Add a test";
+                AddTest.Text = "Add";
             }
         }
     }
