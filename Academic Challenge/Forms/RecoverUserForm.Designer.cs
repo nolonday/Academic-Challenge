@@ -131,7 +131,7 @@
             this.TextBoxLogin.SelectedText = "";
             this.TextBoxLogin.Size = new System.Drawing.Size(300, 50);
             this.TextBoxLogin.TabIndex = 13;
-            this.TextBoxLogin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxLogin_KeyDown);
+            //this.TextBoxLogin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBoxLogin_KeyDown);
             // 
             // ButtonRecover
             // 

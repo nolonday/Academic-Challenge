@@ -137,7 +137,7 @@
             this.ReturnPass.Font = new System.Drawing.Font("Kanit Cyrillic", 15F, System.Drawing.FontStyle.Bold);
             this.ReturnPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
             this.ReturnPass.IsSelectionEnabled = false;
-            this.ReturnPass.Location = new System.Drawing.Point(589, 324);
+            this.ReturnPass.Location = new System.Drawing.Point(468, 324);
             this.ReturnPass.Name = "ReturnPass";
             this.ReturnPass.Size = new System.Drawing.Size(179, 25);
             this.ReturnPass.TabIndex = 15;

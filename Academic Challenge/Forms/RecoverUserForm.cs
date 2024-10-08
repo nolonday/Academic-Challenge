@@ -28,25 +28,50 @@ namespace Academic_Challenge.Forms
         // Обработчик события нажатия кнопки восстановления
         private void ButtonRecover_Click(object sender, EventArgs e)
         {
-            // Попытка восстановить пользователя и показать поле пароля, если успешно
-            if (methods.RecoveryUser(TextBoxLogin.Text, TextBoxPass.Text))
+            // Сначала проверяем, существует ли пользователь с указанным логином и кодом
+            if (methods.CheckUserRecovery(TextBoxLogin.Text, TextBoxCode.Text))
             {
-                string recoverySuccessMessage = Properties.Settings.Default.Language == "ru-RU" ? "Пароль успешно обновлён!" : "Password successfully updated!";
-                string recoverySuccessTitle = Properties.Settings.Default.Language == "ru-RU" ? "Успех" : "Success";
+                TextBoxPass.Visible = true;
+                // Если пользователь существует, проверяем пароль
+                if (!string.IsNullOrWhiteSpace(TextBoxPass.Text))
+                {
+                    // Попытка восстановить пользователя и показать сообщение об успехе
+                    if (methods.RecoveryUser(TextBoxLogin.Text, TextBoxPass.Text))
+                    {
+                        string recoverySuccessMessage = Properties.Settings.Default.Language == "ru-RU" ? "Пароль успешно обновлён!" : "Password successfully updated!";
+                        string recoverySuccessTitle = Properties.Settings.Default.Language == "ru-RU" ? "Успех" : "Success";
 
-                MessageBox.Show(recoverySuccessMessage, recoverySuccessTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                // Очистка полей ввода
-                TextBoxLogin.Text = "";
-                TextBoxCode.Text = "";
-                TextBoxPass.Text = "";
+                        MessageBox.Show(recoverySuccessMessage, recoverySuccessTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        // Очистка полей ввода
+                        TextBoxLogin.Text = "";
+                        TextBoxCode.Text = "";
+                        TextBoxPass.Text = "";
+                        TextBoxPass.Visible = false;
+                    }
+                    else
+                    {
+                        string recoveryErrorMessage = Properties.Settings.Default.Language == "ru-RU" ? "Не удалось восстановить пользователя. Пожалуйста, проверьте ваши данные." : "Failed to recover user. Please check your credentials.";
+                        string recoveryErrorTitle = Properties.Settings.Default.Language == "ru-RU" ? "Ошибка" : "Error";
+
+                        MessageBox.Show(recoveryErrorMessage, recoveryErrorTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    string passwordEmptyMessage = Properties.Settings.Default.Language == "ru-RU" ? "Введите новый пароль." : "Please enter a new password.";
+                    MessageBox.Show(passwordEmptyMessage, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             else
             {
-                string recoveryErrorMessage = Properties.Settings.Default.Language == "ru-RU" ? "Не удалось восстановить пользователя. Пожалуйста, проверьте ваши данные." : "Failed to recover user. Please check your credentials.";
-                string recoveryErrorTitle = Properties.Settings.Default.Language == "ru-RU" ? "Ошибка" : "Error";
+                // Если пользователь не найден, показываем сообщение об ошибке
+                string errorMessage = Properties.Settings.Default.Language == "ru-RU" ? "Эта учетная запись не существует." : "This account does not exist.";
+                string errorTitle = Properties.Settings.Default.Language == "ru-RU" ? "Ошибка" : "Error";
 
-                MessageBox.Show(recoveryErrorMessage, recoveryErrorTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(errorMessage, errorTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                TextBoxPass.Visible = false; // Скрыть поле пароля
             }
+
         }
 
         // Метод для проверки существования пользователя
@@ -56,6 +81,7 @@ namespace Academic_Challenge.Forms
             if (methods.CheckUserRecovery(TextBoxLogin.Text, TextBoxCode.Text))
             {
                 TextBoxPass.Visible = true; // Показать поле пароля, если пользователь найден
+
             }
             else
             {

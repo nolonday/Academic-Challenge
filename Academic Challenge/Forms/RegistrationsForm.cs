@@ -180,6 +180,7 @@ namespace Academic_Challenge
                 TextBoxLogin.PlaceholderText = LanguageStrings.Login;
                 TextBoxCode.PlaceholderText = LanguageStrings.Code;
                 TextBoxPass.PlaceholderText = LanguageStrings.Password;
+                File_Text.Text = "Файл не выбран...";
                 Reg_Text.Text = "Регистрация";
                 Open.Text = "Обзор";
                 ButtonRegistration.Text = "Регистрация";
@@ -187,9 +188,10 @@ namespace Academic_Challenge
             }
             else
             {
-                TextBoxLogin.PlaceholderText = LanguageStrings.Login;
-                TextBoxCode.PlaceholderText = LanguageStrings.Code;
-                TextBoxPass.PlaceholderText = LanguageStrings.Password;
+                TextBoxLogin.PlaceholderText = LanguageStrings.Login_US;
+                TextBoxCode.PlaceholderText = LanguageStrings.Code_US;
+                TextBoxPass.PlaceholderText = LanguageStrings.Password_US;
+                File_Text.Text = "File not selected...";
                 Reg_Text.Text = "Registration";
                 Open.Text = "Overview";
                 ButtonRegistration.Text = "Registration";

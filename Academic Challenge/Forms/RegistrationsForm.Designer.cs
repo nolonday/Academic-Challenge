@@ -121,7 +121,7 @@
             this.Open.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.Open.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.Open.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(8)))), ((int)(((byte)(91)))));
-            this.Open.Font = new System.Drawing.Font("Kanit Cyrillic", 13F);
+            this.Open.Font = new System.Drawing.Font("Kanit Cyrillic", 11F);
             this.Open.ForeColor = System.Drawing.Color.White;
             this.Open.Location = new System.Drawing.Point(468, 324);
             this.Open.Name = "Open";

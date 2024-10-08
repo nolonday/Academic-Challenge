@@ -33,11 +33,6 @@ namespace Academic_Challenge
         // Метод, вызываемый при нажатии кнопки "Войти"
         private void ButtonEnter_Click(object sender, EventArgs e)
         {
-            // Сохранение настроек языка и темы
-            Properties.Settings.Default.Language = "ru-RU";
-            Properties.Settings.Default.Theme = "Default";
-            Properties.Settings.Default.Save(); // Сохранение изменений
-
             var login = TextBoxLogin.Text; // Получаем логин из текстового поля
             var password = TextBoxPass.Text; // Получаем пароль из текстового поля
 
@@ -66,7 +61,10 @@ namespace Academic_Challenge
                 Properties.Settings.Default.Pass = password;
                 Properties.Settings.Default.DateReg = Methods.DateReg;
                 Properties.Settings.Default.Role = Methods.Role;
+                Properties.Settings.Default.Language = "ru-RU";
+                Properties.Settings.Default.Theme = "Default";
                 Properties.Settings.Default.Save();
+                // Сохранение настроек языка и темы
 
                 string welcomeMessage = Properties.Settings.Default.Language == "ru-RU" ? "Добро пожаловать" : "Welcome";
                 MessageBox.Show(welcomeMessage, "Оповещение", MessageBoxButtons.OK, MessageBoxIcon.Information);
